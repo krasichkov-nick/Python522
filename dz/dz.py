@@ -325,29 +325,35 @@ lst_1 = [-2, 3, 8, -11, -4, 6, -9]
 #
 #
 # print(count_otr(lst_1))
+
 # dz_18
 
-text = "Замена строки в текстовом файле;\nизменить строку в списке;\nзаписать список в файл;"
-with open("test.txt", "w") as f:
-    f.write(text)
+# text = "Замена строки в текстовом файле;\nизменить строку в списке;\nзаписать список в файл;"
+# with open("test.txt", "w") as f:
+#     f.write(text)
+#
+# with open("test.txt", "r") as f:
+#     lst = f.read().split("\n")
+#
+# print(lst)
+#
+# pos1 = int(input("Введите позицию 1-й строки: ")) - 1
+# pos2 = int(input("Введите позицию 2-й строки: ")) - 1
+# s = len(lst)
+#
+# if (pos1 < 0) or (pos1 >= s) or (pos2 < 0) or (pos2 >= s):
+#     print(f'\nВ файле {s} строки.\nВводимые значения должны быть в диапазоне от 1 до {s}\nВведите корректные значения'
+#           f' позиций строк для их замены')
+#     exit()
+#
+# lst[pos1], lst[pos2] = lst[pos2], lst[pos1]
+#
+# with open("test.txt", "w") as f:
+#     f.write("\n".join(lst))
+#
+# print(lst)
 
-with open("test.txt", "r") as f:
-    lst = f.read().split("\n")
+# dz_19
 
-print(lst)
+print("Заливка прошла успешно :)")
 
-pos1 = int(input("Введите позицию 1-й строки: ")) - 1
-pos2 = int(input("Введите позицию 2-й строки: ")) - 1
-s = len(lst)
-
-if (pos1 < 0) or (pos1 >= s) or (pos2 < 0) or (pos2 >= s):
-    print(f'\nВ файле {s} строки.\nВводимые значения должны быть в диапазоне от 1 до {s}\nВведите корректные значения'
-          f' позиций строк для их замены')
-    exit()
-
-lst[pos1], lst[pos2] = lst[pos2], lst[pos1]
-
-with open("test.txt", "w") as f:
-    f.write("\n".join(lst))
-
-print(lst)
