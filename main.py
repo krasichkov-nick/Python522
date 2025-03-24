@@ -3249,6 +3249,8 @@ import re
 # print(os.path.isfile(r"C:\python522\nes1\nes2\nes3"))
 # print(os.path.isdir(r"C:\python522\nes1\nes2\nes3"))
 
-with open("text.txt", "w+") as f:
-    print(f.read())
+# with open("text.txt", "w+") as f:
+#     print(f.read())
+
+print("Данные")
 
