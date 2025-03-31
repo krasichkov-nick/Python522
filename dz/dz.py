@@ -327,7 +327,6 @@
 # print(count_otr(lst_1))
 
 # dz_18
-
 # text = "Замена строки в текстовом файле;\nизменить строку в списке;\nзаписать список в файл;"
 # with open("test.txt", "w") as f:
 #     f.write(text)
@@ -352,29 +351,90 @@
 #     f.write("\n".join(lst))
 #
 # print(lst)
-
 # dz_19
 #
 # print("Заливка прошла успешно :)")
 # dz_20
+#
+#
+# import os
+# import shutil
+#
+# dir_name = "Work"
+#
+# os.makedirs("Work/empty_files", exist_ok=True)
+# dir_new = "Work/empty_files"
+#
+# for root, directory, file in os.walk(dir_name):
+#     for file_size in file:
+#         d = os.path.join(root, file_size)
+#         p = os.path.getsize(d)
+#         if p > 0:
+#             print(d, p, '- bytes')
+#         else:
+#             shutil.move(d, dir_new)
+#             # os.replace(d, dir_new)  #  не получилось переместить файлы,
+#             # выдает ошибку права доступа
+#             print(file_size, 'из каталога', root, 'был перемещен в каталог Work/empty_files')
+# dz_21
+
+class Auto:
+
+    def __init__(self, model, year, produce, power, color, price):
+        self.model = model
+        self.year = year
+        self.produce = produce
+        self.power = power
+        self.color = color
+        self.price = price
+
+    def print_info(self):
+        print(" Данные автомобиля ".center(40, "*"))
+        print(f"Название модели: {self.model}\nГод выпуска: {self.year}\n"
+              f"Производитель: {self.produce}\nМощность двигателя: {self.power}\n"
+              f"Цвет машины: {self.color}\nЦена: {self.price}")
+        print("=" * 40)
+
+    def set_model(self, model):
+        self.model = model
+
+    def get_model(self):
+        return self.model
+
+    def set_year(self, year):
+        self.year = year
+
+    def get_year(self):
+        return self.year
+
+    def set_produce(self, produce):
+        self.produce = produce
+
+    def get_produce(self):
+        return self.produce
+
+    def set_power(self, power):
+        self.power = power
+
+    def get_power(self):
+        return self.power
+
+    def set_color(self, color):
+        self.color = color
+
+    def get_color(self):
+        return self.color
+
+    def set_price(self, price):
+        self.price = price
+
+    def get_price(self):
+        return self.price
 
 
-import os
-import shutil
+a1 = Auto("X7 M501", "2021", "BMW", "530 л.с.", "white", "10790000")
+a1.print_info()
+a1.set_power(32)
+a1.print_info()
 
-dir_name = "Work"
 
-os.makedirs("Work/empty_files", exist_ok=True)
-dir_new = "Work/empty_files"
-
-for root, directory, file in os.walk(dir_name):
-    for file_size in file:
-        d = os.path.join(root, file_size)
-        p = os.path.getsize(d)
-        if p > 0:
-            print(d, p, '- bytes')
-        else:
-            shutil.move(d, dir_new)
-            # os.replace(d, dir_new)  #  не получилось переместить файлы,
-            # выдает ошибку права доступа
-            print(file_size, 'из каталога', root, 'был перемещен в каталог Work/empty_files')
