@@ -312,7 +312,7 @@
 #
 # print(count_otr(lst_1))
 
-lst_1 = [-2, 3, 8, -11, -4, 6, -9]
+# lst_1 = [-2, 3, 8, -11, -4, 6, -9]
 #
 #
 # def count_otr(lst):
@@ -354,6 +354,27 @@ lst_1 = [-2, 3, 8, -11, -4, 6, -9]
 # print(lst)
 
 # dz_19
+#
+# print("Заливка прошла успешно :)")
+# dz_20
 
-print("Заливка прошла успешно :)")
 
+import os
+import shutil
+
+dir_name = "Work"
+
+os.makedirs("Work/empty_files", exist_ok=True)
+dir_new = "Work/empty_files"
+
+for root, directory, file in os.walk(dir_name):
+    for file_size in file:
+        d = os.path.join(root, file_size)
+        p = os.path.getsize(d)
+        if p > 0:
+            print(d, p, '- bytes')
+        else:
+            shutil.move(d, dir_new)
+            # os.replace(d, dir_new)  #  не получилось переместить файлы,
+            # выдает ошибку права доступа
+            print(file_size, 'из каталога', root, 'был перемещен в каталог Work/empty_files')
