@@ -2820,6 +2820,8 @@ from itertools import count
 
 
 import re
+from operator import length_hint
+
 
 # s = "Я ищу совпадения в 2025 году. И я их найду в 2 счёта. 6789. [Hel-lo] W_orld"
 # reg = r"[205]"
@@ -3329,19 +3331,431 @@ import re
 # else:
 #     print(f'Файл {file_path} не существует')
 
-import os
+# import os
 
-dir_name = "Work"
+# dir_name = "Work"
+#
+# objs = os.listdir(dir_name)
+# print(objs)
+#
+# for obj in objs:
+#     p = os.path.join(dir_name, obj)
+#     # print(p)
+#     if os.path.isfile(p):
+#         print(f"{obj} - file - {os.path.getsize(p)} bytes")
+#     if os.path.isdir(p):
+#         print(f"{obj} - dir")
 
-objs = os.listdir(dir_name)
-print(objs)
+# import os
+#
+#
+# def info_files(root, folder):
+#     for root, dirs, files in os.walk(root):
+#         for file in files:
+#             file_path = os.path.join(root, file)
+#             file_size = os.path.getsize(file_path)
+#             if file_size == 0:
+#                 os.renames(file_path, os.path.join(folder, file))
+#                 print(f"Файл {file} перемещен из папки {root} в папку {folder}")
+#             else:
+#                 print(f"{file_path} - {file_size} bytes")
+#
+#
+# info_files("Work", "Work/empty_files")
 
-for obj in objs:
-    p = os.path.join(dir_name, obj)
-    # print(p)
-    if os.path.isfile(p):
-        print(f"{obj} - file - {os.path.getsize(p)} bytes")
-    if os.path.isdir(p):
-        print(f"{obj} - dir")
+# ООП
 
+# class Point:
+#     x = 1
+#     y = 2
+
+
+# p1 = Point()
+# Point.x = 100
+# print(p1.x)
+# print(Point.x)
+# print(id(p1))
+# print(id(Point))
+# p1.x = 100
+# p1.y = 50
+# print(p1.x, p1.y)
+# print(p1.__dict__)
+#
+# p2 = Point()
+# print(p2.x, p2.y)
+# print(p2.__dict__)
+# print(Point.__dict__)
+
+# class Point:
+#     x = 1
+#     y = 2
+#
+#     def set_coord(self):
+#         print(self.__dict__)
+#
+#
+# p1 = Point()
+# p1.x = 5
+# p1.y = 10
+# p1.set_coord()
+# Point.set_coord(p1)
+#
+# p2 = Point()
+# p2.set_coord()
+
+
+# class Point:
+#     x = 1
+#     y = 2
+#
+#     def set_coord(self, x1, y1):
+#         self.x = x1
+#         self.y = y1
+#
+#
+# p1 = Point()
+# p1.set_coord(5, 10)
+# Point.set_coord(p1, 10, 20)
+# print(p1.__dict__)
+#
+# p2 = Point()
+# p2.set_coord(2, 7)
+# print(p2.__dict__)
+
+
+# class Human:
+#     name = "name"
+#     birthday = "00.00.0000"
+#     phone = "00-00-00"
+#     country = "country"
+#     city = "city"
+#     address = "street, house"
+#
+#     def print_info(self):
+#         print(" Персональные данные ".center(40, "*"))
+#         print(f"Имя: {self.name}\nДата рождения: {self.birthday}\n"
+#               f"Номер телефона: {self.phone}\nСтрана: {self.country}\n"
+#               f"Город: {self.city}\nДомашний адрес: {self.address}")
+#         print("=" * 40)
+#
+#     def input_info(self, first_name, birthday, phone, country, city, address):
+#         self.name = first_name
+#         self.birthday = birthday
+#         self.phone = phone
+#         self.country = country
+#         self.city = city
+#         self.address = address
+#
+#     def set_name(self, name):
+#         self.name = name
+#
+#     def get_name(self):
+#         return self.name
+#
+#
+# h1 = Human()
+# h1.print_info()
+# h1.input_info("Юля", "23.05.1986", "45-46-98", "Россия", "Москва", "Чистопрудный бульвар, 1А")
+# h1.print_info()
+# h1.set_name("Юлия")
+# h1.print_info()
+# print(h1.get_name())
+
+
+# class Person:
+#     skill = 10
+#
+#     def __init__(self, name, surname):
+#         self.name = name
+#         self.surname = surname
+#
+#     def __del__(self):
+#         print("Удаление экземпляра\n\n")
+#
+#     def print_info(self):
+#
+#         print("Данные сотрудника:", self.name, self.surname)
+#
+#     def add_skill(self, k):
+#         self.skill += k
+#         print("Квалификация сотрудника:", self.skill, "\n")
+
+
+# p1 = Person("Виктор", "Резник")
+# p1.print_info()
+# p1.add_skill(3)
+# del p1
+#
+# p2 = Person("Анна", "Долгих")
+# p2.print_info()
+# p2.add_skill(2)
+
+
+# class Person:
+#     count = 0
+#
+#     def __init__(self, name, surname):
+#         self.name = name
+#         self.surname = surname
+#         Person.count += 1
+#
+#     def print_info(self):
+#         print("Данные сотрудника:", self.name, self.surname)
+#
+#
+# p1 = Person("Виктор", "Резник")
+# p1.print_info()
+#
+# p2 = Person("Анна", "Долгих")
+# p2.print_info()
+#
+# print(p1.count)
+# print(p2.count)
+# print(Person.count)
+
+# class Robot:
+#     k = 0
+#
+#     def __init__(self, name):
+#         self.name = name
+#         print("Инициализация робота:", self.name)
+#         Robot.k += 1
+#
+#     def say_hi(self):
+#         print("Приветствую! Меня зовут:", self.name)
+#
+#     def __del__(self):
+#         print(self.name, "выключается")
+#         Robot.k -= 1
+#
+#         if Robot.k == 0:
+#             print(self.name, "был последним")
+#         print("Работающих роботов осталось:", Robot.k)
+#
+#
+# droid1 = Robot("R2-D2")
+# droid1.say_hi()
+# print("Численность роботов:", Robot.k)
+#
+# droid2 = Robot("C-3PO")
+# droid2.say_hi()
+# print("Численность роботов:", Robot.k)
+#
+# droid3 = Robot("CCC-3PPPO")
+# droid3.say_hi()
+# print("Численность роботов:", Robot.k)
+#
+# print("\nЗдесь роботы могут проделать какую то работу\n")
+# print("Роботы закончили работы, давайте их выключим\n")
+#
+# del droid1
+# del droid2
+# del droid3
+#
+#
+# print("Численность роботов:", Robot.k)
+
+
+# class Point:
+#     def __init__(self, x, y):
+#         self.__x = self.__y = 0
+#         if Point.__check_value(x) and Point.__check_value(y):
+#             self.__x = x
+#             self.__y = y
+#
+#     def __check_value(c):
+#         if isinstance(c, int) or isinstance(c, float):
+#             return True
+#         return False
+#
+#     def set_coord(self, x, y):
+#         if Point.__check_value(x) and Point.__check_value(y):
+#             self.__x = x
+#             self.__y = y
+#         else:
+#             print("Координаты должны быть числами")
+#
+#     def get_coord(self):
+#         return self.__x, self.__y
+#
+#
+# p1 = Point(5, 10)
+# # print(p1.__x, p1.__y)
+# # # p1.z = 20
+# # p1.__x = 100
+# # p1.__y = "abc"
+# # # print(p1.__x, p1.__y)
+# # print(p1.__dict__)
+# # p1.set_coord(5.2, 100)
+# print(p1.get_coord())
+# print(p1.__dict__)
+
+# import math
+# class Rectangle:
+#     def __init__(self, length=1, width=1):
+#         self.__lenght = length
+#         self.__width = width
+#
+#
+#
+#
+#
+#     def get_area(self):
+#         return self.__width * self.__lenght
+#
+#     def get_perimetr(self):
+#         return 2 * (self.__lenght + self.__width)
+#
+#     def get_gypotenuse(self):
+#         return round(math.sqrt(self.__lenght ** 2 + self.__width ** 2), 2)
+#
+#     def get_draw(self):
+#         for _ in range(self.__width):
+#             print("*" * self.__width)
+#
+#     def get_draw2(self):
+#         print(("*" * self.__width + "\n") * self.__lenght)
+#
+# r1 = Rectangle()
+# r1.set_width(9)
+# r1.set_lenght(3)
+# print("Длина прямоугольника:", r1.get_lenght())
+# print("Ширина прямоугольника:", r1.get_width())
+# print("Площадь прямоугольника:", r1.get_area())
+# print("Периметр прямоугольника:", r1.get_perimetr())
+# print("Гипотенуза прямоугольника:", r1.get_gypotenuse())
+# r1.get_draw()
+# r1.get_draw2()
+
+# class Point:
+#     __slots__ = "x", "y"
+#
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+#
+#
+# p1 = Point(5, 10)
+# # p1.z = 20
+# # print(p1.x, p1.y, p1.z)
+# print(p1.x, p1.y)
+# # print(p1.__dict__)
+
+
+# class Point:
+#
+#     def __init__(self, x, y):
+#         self.__x = x
+#         self.__y = y
+#
+#     def __check_value(c):
+#         if isinstance(c, int) or isinstance(c, float):
+#             return True
+#         return False
+#
+#     def __set_coord_x(self, x):
+#         print("Вызов __setCoordX")
+#         self.__x = x
+#
+#     def set_coord(self, x):
+#         if Point.__check_value(x) and Point.__check_value(y):
+#             self.__x = x
+#         else:
+#             print("Координаты должны быть числами")
+#
+#     def __del_coord_x(self):
+#         print("Удаление свойства")
+#         del self.__
+#
+#     def __get_coord_x(self):
+#         return self.__x
+#
+#     coordX = property(__get_coord_x, __set_coord_x)
+#
+#
+# p1 = Point(5, 10)
+# p1.coordX = 20.5
+# print(p1.coordX)
+
+
+# class Person:
+#     def __init__(self, name, old):
+#         self.__name = name
+#         self.__old = old
+#
+#     @property
+#     def name(self):
+#         return self.__name
+#
+#     @name.setter
+#     def name(self, name):
+#         self.__name = name
+#
+#     @name.deleter
+#     def name(self):
+#         del self.__name
+#
+#     @property
+#     def old(self):
+#         return self.__old
+#
+#     @old.setter
+#     def old(self, old):
+#         self.__old = old
+#
+#     @old.deleter
+#     def old(self):
+#         del self.__old
+#
+#
+# p1 = Person("Irina", 26)
+# print(p1.__dict__)
+# p1.name = "Igor"
+# p1.old = 31
+# print(p1.__dict__)
+# del p1.name
+# print(p1.__dict__)
+
+
+# class Point:
+#     __count = 0
+#
+#     def __init__(self, x=0, y=0):
+#         self.x = x
+#         self.y = y
+#         Point.__count += 1
+#
+#     @staticmethod
+#     def get_count():
+#         return Point.__count
+#
+#
+# p1 = Point()
+# p2 = Point()
+# p3 = Point()
+# print(Point.get_count())
+# print(p1.get_count())
+
+def inc(x):
+    return x + 1
+
+
+def dec(x):
+    return x - 1
+
+
+print(inc(10), dec(10))
+
+
+class Change:
+    @staticmethod
+    def inc(x):
+        return x + 1
+
+    @staticmethod
+    def dec(x):
+        return x - 1
+
+
+print(Change.inc(10), Change.dec(10))
 
