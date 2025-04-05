@@ -377,64 +377,91 @@
 #             # выдает ошибку права доступа
 #             print(file_size, 'из каталога', root, 'был перемещен в каталог Work/empty_files')
 # dz_21
+# class Auto:
+#
+#     def __init__(self, model, year, produce, power, color, price):
+#         self.model = model
+#         self.year = year
+#         self.produce = produce
+#         self.power = power
+#         self.color = color
+#         self.price = price
+#
+#     def print_info(self):
+#         print(" Данные автомобиля ".center(40, "*"))
+#         print(f"Название модели: {self.model}\nГод выпуска: {self.year}\n"
+#               f"Производитель: {self.produce}\nМощность двигателя: {self.power}\n"
+#               f"Цвет машины: {self.color}\nЦена: {self.price}")
+#         print("=" * 40)
+#
+#     def set_model(self, model):
+#         self.model = model
+#
+#     def get_model(self):
+#         return self.model
+#
+#     def set_year(self, year):
+#         self.year = year
+#
+#     def get_year(self):
+#         return self.year
+#
+#     def set_produce(self, produce):
+#         self.produce = produce
+#
+#     def get_produce(self):
+#         return self.produce
+#
+#     def set_power(self, power):
+#         self.power = power
+#
+#     def get_power(self):
+#         return self.power
+#
+#     def set_color(self, color):
+#         self.color = color
+#
+#     def get_color(self):
+#         return self.color
+#
+#     def set_price(self, price):
+#         self.price = price
+#
+#     def get_price(self):
+#         return self.price
+#
+#
+# a1 = Auto("X7 M501", "2021", "BMW", "530 л.с.", "white", "10790000")
+# a1.print_info()
+# a1.set_power(32)
+# a1.print_info()
+# dz_22
 
-class Auto:
+class Convert:
+    def __init__(self, x=12):
+        self.__x = x
 
-    def __init__(self, model, year, produce, power, color, price):
-        self.model = model
-        self.year = year
-        self.produce = produce
-        self.power = power
-        self.color = color
-        self.price = price
+    def __check_value(c):
+        if isinstance(c, int) or isinstance(c, float):
+            return True
+        return False
 
-    def print_info(self):
-        print(" Данные автомобиля ".center(40, "*"))
-        print(f"Название модели: {self.model}\nГод выпуска: {self.year}\n"
-              f"Производитель: {self.produce}\nМощность двигателя: {self.power}\n"
-              f"Цвет машины: {self.color}\nЦена: {self.price}")
-        print("=" * 40)
+    @property
+    def x(self):
+        return print(self.__x, "кг =>", round(self.__x * 2.205, 2), "фунтов")
+        # не до конца понял как отрабатывает после вывода конвертации,
+        # откуда появляется значение "none" и идет на вывод?
 
-    def set_model(self, model):
-        self.model = model
-
-    def get_model(self):
-        return self.model
-
-    def set_year(self, year):
-        self.year = year
-
-    def get_year(self):
-        return self.year
-
-    def set_produce(self, produce):
-        self.produce = produce
-
-    def get_produce(self):
-        return self.produce
-
-    def set_power(self, power):
-        self.power = power
-
-    def get_power(self):
-        return self.power
-
-    def set_color(self, color):
-        self.color = color
-
-    def get_color(self):
-        return self.color
-
-    def set_price(self, price):
-        self.price = price
-
-    def get_price(self):
-        return self.price
+    @x.setter
+    def x(self, x):
+        if Convert.__check_value(x):
+            self.__x = x
+        else:
+            print("Килограммы задаются только числами")
 
 
-a1 = Auto("X7 M501", "2021", "BMW", "530 л.с.", "white", "10790000")
-a1.print_info()
-a1.set_power(32)
-a1.print_info()
-
-
+p1 = Convert()
+print(p1.x)
+p1.x = 41
+print(p1.x)
+p1.x = "abc"
