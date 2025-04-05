@@ -3593,38 +3593,53 @@ from operator import length_hint
 # import math
 # class Rectangle:
 #     def __init__(self, length=1, width=1):
-#         self.__lenght = length
+#         self.__length = length
 #         self.__width = width
 #
+#     def __check_value(c):
+#         if isinstance(c, int) or isinstance(c, float):
+#             return True
+#         return False
 #
+#     def get_width(self):
+#         return self.__width
 #
+#     def get_length(self):
+#         return self.__length
 #
+#     def set_width(self, width):
+#         self.__width = width
+#
+#     def set_length(self, length):
+#         self.__length = length
 #
 #     def get_area(self):
-#         return self.__width * self.__lenght
+#         return self.__width * self.__length
 #
 #     def get_perimetr(self):
-#         return 2 * (self.__lenght + self.__width)
+#         return 2 * (self.__length + self.__width)
 #
 #     def get_gypotenuse(self):
-#         return round(math.sqrt(self.__lenght ** 2 + self.__width ** 2), 2)
+#         return round(math.sqrt(self.__length ** 2 + self.__width ** 2), 2)
 #
 #     def get_draw(self):
 #         for _ in range(self.__width):
 #             print("*" * self.__width)
 #
 #     def get_draw2(self):
-#         print(("*" * self.__width + "\n") * self.__lenght)
+#         print(("*" * self.__width + "\n") * self.__length)
+#
 #
 # r1 = Rectangle()
 # r1.set_width(9)
-# r1.set_lenght(3)
-# print("Длина прямоугольника:", r1.get_lenght())
+# r1.set_length(3)
+# print("Длина прямоугольника:", r1.get_length())
 # print("Ширина прямоугольника:", r1.get_width())
 # print("Площадь прямоугольника:", r1.get_area())
 # print("Периметр прямоугольника:", r1.get_perimetr())
 # print("Гипотенуза прямоугольника:", r1.get_gypotenuse())
 # r1.get_draw()
+# print()
 # r1.get_draw2()
 
 # class Point:
@@ -3677,6 +3692,41 @@ from operator import length_hint
 # p1.coordX = 20.5
 # print(p1.coordX)
 
+# class Point:
+#
+#     def __init__(self, x, y):
+#         self.__x = x
+#         self.__y = y
+#
+#     def __check_value(c):
+#         if isinstance(c, int) or isinstance(c, float):
+#             return True
+#         return False
+#
+#     @property
+#     def x(self):
+#         return self.__x
+#
+#     @x.setter
+#     def x(self, x):
+#         if Point.__check_value(x):
+#             self.__x = x
+#         else:
+#             print("Координаты должны быть числами")
+#
+#     @x.deleter
+#     def x(self):
+#         print("Удаление свойства")
+#         del self.__x
+#
+#     # coordX = property(__get_coord_x, __set_coord_x)
+#
+#
+# p1 = Point(5, 10)
+# p1.x = 50
+# print(p1.x)
+# del p1.x
+# print(p1.__dict__)
 
 # class Person:
 #     def __init__(self, name, old):
@@ -3736,26 +3786,25 @@ from operator import length_hint
 # print(Point.get_count())
 # print(p1.get_count())
 
-def inc(x):
-    return x + 1
-
-
-def dec(x):
-    return x - 1
-
-
-print(inc(10), dec(10))
-
-
-class Change:
-    @staticmethod
-    def inc(x):
-        return x + 1
-
-    @staticmethod
-    def dec(x):
-        return x - 1
-
-
-print(Change.inc(10), Change.dec(10))
-
+# def inc(x):
+#     return x + 1
+#
+#
+# def dec(x):
+#     return x - 1
+#
+#
+# print(inc(10), dec(10))
+#
+#
+# class Change:
+#     @staticmethod
+#     def inc(x):
+#         return x + 1
+#
+#     @staticmethod
+#     def dec(x):
+#         return x - 1
+#
+#
+# print(Change.inc(10), Change.dec(10))
