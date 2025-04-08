@@ -685,9 +685,6 @@ class Account:
         print(f"Проценты: {self.__percent:.0%}")
         print("-" * 20)
 
-    # def edit_owner(self, surname):
-    #     self.__surname = surname
-
     def add_percents(self):
         self.__value += self.__value * self.__percent
         print("Проценты были успешно начислены!")
@@ -708,7 +705,6 @@ class Account:
 
 
 acc = Account("12345", "Долгих", 0.03, 1000)
-# acc.print_balance()
 acc.print_info()
 acc.convert_to_usd()
 acc.convert_to_eur()
