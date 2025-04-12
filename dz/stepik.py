@@ -17,6 +17,7 @@
 #     print('NO')   #  шахматная ладья
 from locale import windows_locale
 
+
 # a_1 = int(input())        #  задача про отрезки
 # b_1 = int(input())
 # a_2 = int(input())
@@ -1166,3 +1167,107 @@ from locale import windows_locale
 #
 # print(greet("Alice"))
 # print(greet())
+
+# def print_paris():
+#     print(s)
+#     s = 'I love Paris'
+#
+# print_paris()
+
+# def print_paris():
+#     s = 'I love Paris'
+#     print(s)
+#
+# def print_london():
+#     s = 'I love London'
+#     print(s)
+#
+# s = 'I love Moscow'
+# print_paris()
+# print_london()
+# print(s)
+
+# def swap(a, b):
+#     a, b = b, a
+#
+#
+# a = 4
+# b = 3
+# swap(a, b)
+# print(a - b)
+
+
+# x = 5
+#
+# def add():
+#     global x
+#     x = 3
+#     x = x + 5
+#     print(x)
+#
+# add()
+# print(x)
+
+
+# def convert_to_miles(km):
+#     return round(km * 0.6214, 4)
+#
+#
+# num = int(input())
+# print(convert_to_miles(num))
+
+
+# def get_days(month):
+#     if month == 2:
+#         return 28
+#     if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
+#         return 31
+#     else:
+#         return 30
+#
+#
+# num = int(input())
+# print(get_days(num))
+
+
+# def get_factors(num):
+#     divisors = []
+#     for i in range(1, n + 1):
+#         if n % i == 0:
+#             divisors.append(i)
+#     return divisors
+#
+#
+# n = int(input())
+# print(get_factors(n))
+
+# def get_factors(num):
+#     divisors = []
+#     for i in range(1, n + 1):
+#         if n % i == 0:
+#             divisors.append(i)
+#     return len(divisors)
+#
+#
+# n = int(input())
+# print(get_factors(n))
+
+
+# def find_all(target, symbol):
+#     a = list(target)
+#     b = [i for i in range(len(a)) if a[i] == symbol]
+#     return b
+#
+#
+# s = input()
+# char = input()
+# print(find_all(s, char))
+
+
+def merge(list1, list2):
+    return sorted(list1 + list2)
+
+
+numbers1 = [int(c) for c in input().split()]
+numbers2 = [int(c) for c in input().split()]
+print(merge(numbers1, numbers2))
