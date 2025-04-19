@@ -169,6 +169,8 @@
 # print(tpl3)
 # print('0=', tpl3.count(0))
 # dz_10
+from tokenize import group
+
 
 # d = {
 #     'John': {'N': 3056, 'S': 8463, 'E': 8441, 'W': 2694},
@@ -748,79 +750,133 @@
 # print()
 
 # dz_24
+#
+# class Pair:
+#     def __init__(self, a, b):
+#         self.a = a
+#         self.b = b
+#
+#     @staticmethod
+#     def verify_a(a):
+#         if not isinstance(a, int) or isinstance(a, float) or a <= 0:
+#             raise TypeError("Вводимое значение должно быть положительным числом")
+#
+#     @staticmethod
+#     def verify_b(b):
+#         if not isinstance(b, int) or isinstance(b, float) or b <= 0:
+#             raise TypeError("Вводимое значение должно быть положительным числом")
+#
+#     @property
+#     def a(self):
+#         return self.__a
+#
+#     @a.setter
+#     def a(self, a):
+#         self.verify_a(a)
+#         self.__a = a
+#
+#     @property
+#     def b(self):
+#         return self.__b
+#
+#     @b.setter
+#     def b(self, b):
+#         self.verify_b(b)
+#         self.__b = b
+#
+#     def composition(self):
+#         print(f"Произведение: {self.a * self.b}")
+#
+#     def amount(self):
+#         print(f"Сумма: {self.a + self.b}")
+#
+#
+# class RightTriangle(Pair):
+#     def __init__(self, a, b):
+#         super().__init__(a, b)
+#
+#     def hypotenuse_t(self):
+#         return round((self.a ** 2 + self.b ** 2) ** 0.5, 2)
+#
+#     def hypotenuse(self):
+#         print(f"Гипотенуза треугольника ABC: {self.hypotenuse_t()}")
+#
+#     def triangle_info(self):
+#         print(f"Треугольник ABC со сторонами ({self.a}, {self.b}, {self.hypotenuse_t()})")
+#
+#     def square(self):
+#         p = (self.a + self.b + self.hypotenuse_t()) / 2
+#         s = round(((p * (p - self.a) * (p - self.b) * (p - self.hypotenuse_t())) ** 0.5), 2)
+#         print(f"Площадь треугольника ABC: {s}")
+#
+#
+# r1 = RightTriangle(5, 8)
+# r1.hypotenuse()
+# r1.triangle_info()
+# r1.square()
+# print()
+# r1.amount()
+# r1.composition()
+# print()
+# r1.a = 10
+# r1.b = 15
+# r1.hypotenuse()
+# r1.a = 24
+# r1.hypotenuse()
+# r1.amount()
+# r1.composition()
+# r1.square()
+# dz_25
 
-class Pair:
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
+class Human:
+    def __init__(self, surname, name, age):
+        self.surname = surname
+        self.name = name
+        self.age = age
 
-    @staticmethod
-    def verify_a(a):
-        if not isinstance(a, int) or isinstance(a, float) or a <= 0:
-            raise TypeError("Вводимое значение должно быть положительным числом")
-
-    @staticmethod
-    def verify_b(b):
-        if not isinstance(b, int) or isinstance(b, float) or b <= 0:
-            raise TypeError("Вводимое значение должно быть положительным числом")
-
-    @property
-    def a(self):
-        return self.__a
-
-    @a.setter
-    def a(self, a):
-        self.verify_a(a)
-        self.__a = a
-
-    @property
-    def b(self):
-        return self.__b
-
-    @b.setter
-    def b(self, b):
-        self.verify_b(b)
-        self.__b = b
-
-    def composition(self):
-        print(f"Произведение: {self.a * self.b}")
-
-    def amount(self):
-        print(f"Сумма: {self.a + self.b}")
+    def human_info(self):
+        print(self.surname, self.name, self.age, end="")
 
 
-class RightTriangle(Pair):
-    def __init__(self, a, b):
-        super().__init__(a, b)
+class Student(Human):
+    def __init__(self, surname, name, age, vector, group, bal):
+        super().__init__(surname, name, age)
+        self.vector = vector
+        self.group = group
+        self.bal = bal
 
-    def hypotenuse_t(self):
-        return round((self.a ** 2 + self.b ** 2) ** 0.5, 2)
-
-    def hypotenuse(self):
-        print(f"Гипотенуза треугольника ABC: {self.hypotenuse_t()}")
-
-    def triangle_info(self):
-        print(f"Треугольник ABC со сторонами ({self.a}, {self.b}, {self.hypotenuse_t()})")
-
-    def square(self):
-        p = (self.a + self.b + self.hypotenuse_t()) / 2
-        s = round(((p * (p - self.a) * (p - self.b) * (p - self.hypotenuse_t())) ** 0.5), 2)
-        print(f"Площадь треугольника ABC: {s}")
+    def student_info(self):
+        return f"{self.human_info()}, {print("", self.vector, self.group, self.bal)}"
 
 
-r1 = RightTriangle(5, 8)
-r1.hypotenuse()
-r1.triangle_info()
-r1.square()
-print()
-r1.amount()
-r1.composition()
-print()
-r1.a = 10
-r1.b = 15
-r1.hypotenuse()
-r1.a = 24
-r1.hypotenuse()
-r1.amount()
-r1.composition()
-r1.square()
+class Teacher(Human):
+    def __init__(self, surname, name, age, prof, skill):
+        super().__init__(surname, name, age)
+        self.prof = prof
+        self.skill = skill
+
+    def teacher_info(self):
+        return f"{self.human_info()}, {print("", self.prof, self.skill)}"
+
+
+class Graduate(Student):
+    def __init__(self, surname, name, age, vector, group, bal, tema):
+        super().__init__(surname, name, age, vector, group, bal)
+        self.tema = tema
+
+    def graduate_info(self):
+        return f"{self.student_info()}, {print(self.tema)}"
+
+
+s1 = Student("Батодалаев", "Даши", 16, "ГК", "Web_011", 5)
+s2 = Student("Загидуллин", "Линар", 32, "РПО", "PD_011", 5)
+s3 = Graduate("Шугани", "Сергей", 15, "РПО", "PD_011", 5, "Защита персональных данных")
+s4 = Teacher("Даньшин", "Андрей", 38, "Астрофизика", 110)
+s5 = Student("Маркин", "Даниил", 17, "ГК", "Python_011", 5)
+s6 = Teacher("Башкиров", "Алексей", 45, "Разработка приложений", 20)
+s1.student_info()
+s2.student_info()
+s3.graduate_info()
+s4.teacher_info()
+s5.student_info()
+s6.teacher_info()
