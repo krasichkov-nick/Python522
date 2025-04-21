@@ -828,55 +828,79 @@ from tokenize import group
 # r1.square()
 # dz_25
 
-class Human:
-    def __init__(self, surname, name, age):
-        self.surname = surname
+# class Human:
+#     def __init__(self, surname, name, age):
+#         self.surname = surname
+#         self.name = name
+#         self.age = age
+#
+#     def human_info(self):
+#         print(self.surname, self.name, self.age, end="")
+#
+#
+# class Student(Human):
+#     def __init__(self, surname, name, age, vector, group, bal):
+#         super().__init__(surname, name, age)
+#         self.vector = vector
+#         self.group = group
+#         self.bal = bal
+#
+#     def student_info(self):
+#         return f"{self.human_info()}, {print("", self.vector, self.group, self.bal)}"
+#
+#
+# class Teacher(Human):
+#     def __init__(self, surname, name, age, prof, skill):
+#         super().__init__(surname, name, age)
+#         self.prof = prof
+#         self.skill = skill
+#
+#     def teacher_info(self):
+#         return f"{self.human_info()}, {print("", self.prof, self.skill)}"
+#
+#
+# class Graduate(Student):
+#     def __init__(self, surname, name, age, vector, group, bal, tema):
+#         super().__init__(surname, name, age, vector, group, bal)
+#         self.tema = tema
+#
+#     def graduate_info(self):
+#         return f"{self.student_info()}, {print(self.tema)}"
+#
+#
+# s1 = Student("Батодалаев", "Даши", 16, "ГК", "Web_011", 5)
+# s2 = Student("Загидуллин", "Линар", 32, "РПО", "PD_011", 5)
+# s3 = Graduate("Шугани", "Сергей", 15, "РПО", "PD_011", 5, "Защита персональных данных")
+# s4 = Teacher("Даньшин", "Андрей", 38, "Астрофизика", 110)
+# s5 = Student("Маркин", "Даниил", 17, "ГК", "Python_011", 5)
+# s6 = Teacher("Башкиров", "Алексей", 45, "Разработка приложений", 20)
+# s1.student_info()
+# s2.student_info()
+# s3.graduate_info()
+# s4.teacher_info()
+# s5.student_info()
+# s6.teacher_info()
+# dz_26
+
+class Student:
+    def __init__(self, name):
         self.name = name
-        self.age = age
+        self.dd = self.Comp().show()
 
-    def human_info(self):
-        print(self.surname, self.name, self.age, end="")
+    def show(self):
+        print(self.name, "=>", self.dd)
 
+    class Comp:
+        def __init__(self, model="HP", cpu="i7", memory=16):
+            self.model = model
+            self.cpu = cpu
+            self.memory = memory
 
-class Student(Human):
-    def __init__(self, surname, name, age, vector, group, bal):
-        super().__init__(surname, name, age)
-        self.vector = vector
-        self.group = group
-        self.bal = bal
-
-    def student_info(self):
-        return f"{self.human_info()}, {print("", self.vector, self.group, self.bal)}"
+        def show(self):
+            return f"{self.model}, {self.cpu}, {self.memory}"
 
 
-class Teacher(Human):
-    def __init__(self, surname, name, age, prof, skill):
-        super().__init__(surname, name, age)
-        self.prof = prof
-        self.skill = skill
-
-    def teacher_info(self):
-        return f"{self.human_info()}, {print("", self.prof, self.skill)}"
-
-
-class Graduate(Student):
-    def __init__(self, surname, name, age, vector, group, bal, tema):
-        super().__init__(surname, name, age, vector, group, bal)
-        self.tema = tema
-
-    def graduate_info(self):
-        return f"{self.student_info()}, {print(self.tema)}"
-
-
-s1 = Student("Батодалаев", "Даши", 16, "ГК", "Web_011", 5)
-s2 = Student("Загидуллин", "Линар", 32, "РПО", "PD_011", 5)
-s3 = Graduate("Шугани", "Сергей", 15, "РПО", "PD_011", 5, "Защита персональных данных")
-s4 = Teacher("Даньшин", "Андрей", 38, "Астрофизика", 110)
-s5 = Student("Маркин", "Даниил", 17, "ГК", "Python_011", 5)
-s6 = Teacher("Башкиров", "Алексей", 45, "Разработка приложений", 20)
-s1.student_info()
-s2.student_info()
-s3.graduate_info()
-s4.teacher_info()
-s5.student_info()
-s6.teacher_info()
+s1 = Student("Roman")
+s2 = Student("Vladimir")
+s1.show()
+s2.show()
