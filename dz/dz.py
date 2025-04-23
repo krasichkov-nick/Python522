@@ -1015,8 +1015,10 @@ def dec(fn):
 
 
 class Shape:
-    def __init__(self, figura):
+    def __init__(self, figura, a, color):
         self.type = figura
+        self.a = a
+        self.color = color
 
     @abstractmethod
     def perimetr(self):
@@ -1037,9 +1039,7 @@ class Shape:
 
 class Square(Shape):
     def __init__(self, a, color):
-        super().__init__("Квадрат")
-        self.a = a
-        self.color = color
+        super().__init__("Квадрат", a, color)
 
     def perimetr(self):
         return self.a * 4
@@ -1061,10 +1061,8 @@ class Square(Shape):
 
 class Rectangle(Shape):
     def __init__(self, a, b, color):
-        super().__init__("Прямоугольник")
-        self.a = a
+        super().__init__("Прямоугольник", a, color)
         self.b = b
-        self.color = color
 
     def perimetr(self):
         return (self.a + self.b) * 2
@@ -1086,11 +1084,9 @@ class Rectangle(Shape):
 
 class Triangle(Shape):
     def __init__(self, a, b, c, color):
-        super().__init__("Треугольник")
-        self.a = a
+        super().__init__("Треугольник", a, color)
         self.b = b
         self.c = c
-        self.color = color
 
     def perimetr(self):
         return self.a + self.b + self.c
