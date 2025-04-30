@@ -1001,119 +1001,160 @@ from tokenize import group
 # print("Операторы <=, >=")
 # print(c1 <= c2)
 # print(c1 >= c2)
+#
+# from abc import ABC, abstractmethod
+#
+#
+# def dec(fn):
+#     def wrap(*args, **kwargs):
+#         print("=" * 20)
+#         fn(*args, **kwargs)
+#         print("=" * 20)
+#
+#     return wrap
+#
+#
+# class Shape:
+#     def __init__(self, figura, a, color):
+#         self.type = figura
+#         self.a = a
+#         self.color = color
+#
+#     @abstractmethod
+#     def perimetr(self):
+#         pass
+#
+#     @abstractmethod
+#     def area(self):
+#         pass
+#
+#     @abstractmethod
+#     def show(self):
+#         pass
+#
+#     @abstractmethod
+#     def info(self):
+#         pass
+#
+#
+# class Square(Shape):
+#     def __init__(self, a, color):
+#         super().__init__("Квадрат", a, color)
+#
+#     def perimetr(self):
+#         return self.a * 4
+#
+#     def area(self):
+#         return self.a ** 2
+#
+#     def show(self):
+#         for i in range(self.a):
+#             print(self.a * "*")
+#
+#     @dec
+#     def info(self):
+#         print(
+#             f"{self.type}\nСторона: {self.a}\nЦвет: {self.color}\nПериметр: {self.perimetr()}"
+#             f"\nПлощадь: {self.area()}")
+#         return self.show()
+#
+#
+# class Rectangle(Shape):
+#     def __init__(self, a, b, color):
+#         super().__init__("Прямоугольник", a, color)
+#         self.b = b
+#
+#     def perimetr(self):
+#         return (self.a + self.b) * 2
+#
+#     def area(self):
+#         return self.a * self.b
+#
+#     def show(self):
+#         for i in range(self.a):
+#             print(self.b * "*")
+#
+#     @dec
+#     def info(self):
+#         print(
+#             f"{self.type}\nСторона 1: {self.a}\nСторона 2: {self.b}\nЦвет: {self.color}\nПериметр: {self.perimetr()}"
+#             f"\nПлощадь: {self.area()}")
+#         return self.show()
+#
+#
+# class Triangle(Shape):
+#     def __init__(self, a, b, c, color):
+#         super().__init__("Треугольник", a, color)
+#         self.b = b
+#         self.c = c
+#
+#     def perimetr(self):
+#         return self.a + self.b + self.c
+#
+#     def area(self):
+#         p = self.a + self.b + self.c
+#         return round((p * (p - self.a) * (p - self.b) * (p - self.c)) ** 0.5, 2)
+#
+#     def show(self):
+#         for i in range(self.a):
+#             for j in range(i + 1):
+#                 if j >= self.a - i:
+#                     continue
+#                 print("*", end=" ")
+#             print()
+#
+#     @dec
+#     def info(self):
+#         print(
+#             f"{self.type}\nСторона 1: {self.a}\nСторона 2: {self.b}\nСторона 3: {self.c}\nЦвет: {self.color}\n"
+#             f"Периметр: {self.perimetr()}\nПлощадь: {self.area()}")
+#         return self.show()
+#
+#
+# s1 = Square(3, "red")
+# s1.info()
+# s2 = Rectangle(3, 7, "green")
+# s2.info()
+# s3 = Triangle(11, 6, 6, "yellow")
+# s3.info()
 
-from abc import ABC, abstractmethod
+
+import json
+from random import choice
 
 
-def dec(fn):
-    def wrap(*args, **kwargs):
-        print("=" * 20)
-        fn(*args, **kwargs)
-        print("=" * 20)
+def gen_person():
+    name = ''
+    tel = ''
+    number = ''
 
-    return wrap
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'k', 'l', 'n']
+    nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
 
+    while len(number) != 10:
+        number += choice(nums)
 
-class Shape:
-    def __init__(self, figura, a, color):
-        self.type = figura
-        self.a = a
-        self.color = color
+    while len(name) != 7:
+        name += choice(letters)
 
-    @abstractmethod
-    def perimetr(self):
-        pass
+    while len(tel) != 10:
+        tel += choice(nums)
 
-    @abstractmethod
-    def area(self):
-        pass
+    person = {number: {'name': name, 'tel': tel}}
 
-    @abstractmethod
-    def show(self):
-        pass
-
-    @abstractmethod
-    def info(self):
-        pass
+    return person
 
 
-class Square(Shape):
-    def __init__(self, a, color):
-        super().__init__("Квадрат", a, color)
+def write_json(person_dict):
+    try:
+        data = json.load(open("persons.json"))
+    except FileNotFoundError:
+        data = []
 
-    def perimetr(self):
-        return self.a * 4
-
-    def area(self):
-        return self.a ** 2
-
-    def show(self):
-        for i in range(self.a):
-            print(self.a * "*")
-
-    @dec
-    def info(self):
-        print(
-            f"{self.type}\nСторона: {self.a}\nЦвет: {self.color}\nПериметр: {self.perimetr()}"
-            f"\nПлощадь: {self.area()}")
-        return self.show()
+    data.append(person_dict)
+    with open('persons.json', 'w') as f:
+        json.dump(data, f, indent=2)
 
 
-class Rectangle(Shape):
-    def __init__(self, a, b, color):
-        super().__init__("Прямоугольник", a, color)
-        self.b = b
-
-    def perimetr(self):
-        return (self.a + self.b) * 2
-
-    def area(self):
-        return self.a * self.b
-
-    def show(self):
-        for i in range(self.a):
-            print(self.b * "*")
-
-    @dec
-    def info(self):
-        print(
-            f"{self.type}\nСторона 1: {self.a}\nСторона 2: {self.b}\nЦвет: {self.color}\nПериметр: {self.perimetr()}"
-            f"\nПлощадь: {self.area()}")
-        return self.show()
-
-
-class Triangle(Shape):
-    def __init__(self, a, b, c, color):
-        super().__init__("Треугольник", a, color)
-        self.b = b
-        self.c = c
-
-    def perimetr(self):
-        return self.a + self.b + self.c
-
-    def area(self):
-        p = self.a + self.b + self.c
-        return round((p * (p - self.a) * (p - self.b) * (p - self.c)) ** 0.5, 2)
-
-    def show(self):
-        for i in range(self.a):
-            for j in range(i + 1):
-                if j >= self.a - i:
-                    continue
-                print("*", end=" ")
-            print()
-
-    @dec
-    def info(self):
-        print(
-            f"{self.type}\nСторона 1: {self.a}\nСторона 2: {self.b}\nСторона 3: {self.c}\nЦвет: {self.color}\n"
-            f"Периметр: {self.perimetr()}\nПлощадь: {self.area()}")
-        return self.show()
-
-
-s1 = Square(3, "red")
-s1.info()
-s2 = Rectangle(3, 7, "green")
-s2.info()
-s3 = Triangle(11, 6, 6, "yellow")
-s3.info()
+for i in range(5):
+    write_json(gen_person())
