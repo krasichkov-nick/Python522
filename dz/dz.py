@@ -169,7 +169,7 @@
 # print(tpl3)
 # print('0=', tpl3.count(0))
 # dz_10
-from tokenize import group
+# from tokenize import group
 
 # d = {
 #     'John': {'N': 3056, 'S': 8463, 'E': 8441, 'W': 2694},
@@ -1119,42 +1119,130 @@ from tokenize import group
 # s3.info()
 
 
+# import json
+# from random import choice
+#
+#
+# def gen_person():
+#     name = ''
+#     tel = ''
+#     number = ''
+#
+#     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'k', 'l', 'n']
+#     nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+#
+#     while len(number) != 10:
+#         number += choice(nums)
+#
+#     while len(name) != 7:
+#         name += choice(letters)
+#
+#     while len(tel) != 10:
+#         tel += choice(nums)
+#
+#     person = {number: {'name': name, 'tel': tel}}
+#
+#     return person
+#
+#
+# def write_json(person_dict):
+#     try:
+#         data = json.load(open("persons.json"))
+#     except FileNotFoundError:
+#         data = {}
+#
+#     data.update(person_dict)
+#     with open('persons.json', 'w') as f:
+#         json.dump(data, f, indent=2)
+#
+#
+# for i in range(5):
+#     write_json(gen_person())
+
+
 import json
-from random import choice
 
 
-def gen_person():
-    name = ''
-    tel = ''
-    number = ''
-
-    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'k', 'l', 'n']
-    nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
-
-    while len(number) != 10:
-        number += choice(nums)
-
-    while len(name) != 7:
-        name += choice(letters)
-
-    while len(tel) != 10:
-        tel += choice(nums)
-
-    person = {number: {'name': name, 'tel': tel}}
-
-    return person
+countries = {}
 
 
-def write_json(person_dict):
+def add_country():
+    country = input("Введите название страны: ")
+    capital = input("Введите название столицы: ")
+    countries[country] = capital
+    save_data()
+
+
+def save_data():
+    with open("countries.json", "w") as f:
+        json.dump(countries, f)
+        print("Данные сохранены.")
+
+
+def load_data():
+    global countries
     try:
-        data = json.load(open("persons.json"))
+        with open("countries.json", "r") as f:
+            print(json.load(f))
     except FileNotFoundError:
-        data = []
-
-    data.append(person_dict)
-    with open('persons.json', 'w') as f:
-        json.dump(data, f, indent=2)
+        print("Файл с данными не найден.")
 
 
-for i in range(5):
-    write_json(gen_person())
+def remove_country():
+    country = input("Введите название страны для удаления: ")
+    if country in countries:
+        del countries[country]
+        save_data()
+    else:
+        print("Такой страны нет в словаре.")
+
+
+def search_country():
+    country = input("Введите название страны для поиска: ")
+    if country in countries:
+        print(f"Столица страны {country}: {countries[country]}")
+    else:
+        print("Такой страны нет в словаре.")
+
+
+def edit_country():
+    country = input("Введите название страны для редактирования: ")
+    if country in countries:
+        new_capital = input("Введите новое название столицы: ")
+        countries[country] = new_capital
+        save_data()
+    else:
+        print("Такой страны нет в словаре.")
+
+
+while True:
+    print(
+        "*" * 20,
+        "\nВыбор действия:\n"
+        "1 - добавление данных\n"
+        "2 - удаление данных\n"
+        "3 - поиск данных\n"
+        "4 - редактирование данных\n"
+        "5 - просмотр данных\n"
+        "6 - завершение работы")
+    n = int(input("Ввод: "))
+    if n == 6:
+        print("Программа завершена")
+        print("*" * 20)
+        break
+    elif n == 1:
+        add_country()
+    elif n == 2:
+        remove_country()
+    elif n == 3:
+        search_country()
+    elif n == 4:
+        edit_country()
+    elif n == 5:
+        load_data()
+
+
+
+
+
+
