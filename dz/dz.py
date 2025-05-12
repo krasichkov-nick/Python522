@@ -1163,86 +1163,201 @@
 import json
 
 
-countries = {}
+# countries = {}
+#
+#
+# def add_country():
+#     country = input("Введите название страны: ")
+#     capital = input("Введите название столицы: ")
+#     countries[country] = capital
+#     save_data()
+#
+#
+# def save_data():
+#     with open("countries.json", "w") as f:
+#         json.dump(countries, f)
+#         print("Данные сохранены.")
+#
+#
+# def load_data():
+#     global countries
+#     try:
+#         with open("countries.json", "r") as f:
+#             print(json.load(f))
+#     except FileNotFoundError:
+#         print("Файл с данными не найден.")
+#
+#
+# def remove_country():
+#     country = input("Введите название страны для удаления: ")
+#     if country in countries:
+#         del countries[country]
+#         save_data()
+#     else:
+#         print("Такой страны нет в словаре.")
+#
+#
+# def search_country():
+#     country = input("Введите название страны для поиска: ")
+#     if country in countries:
+#         print(f"Столица страны {country}: {countries[country]}")
+#     else:
+#         print("Такой страны нет в словаре.")
+#
+#
+# def edit_country():
+#     country = input("Введите название страны для редактирования: ")
+#     if country in countries:
+#         new_capital = input("Введите новое название столицы: ")
+#         countries[country] = new_capital
+#         save_data()
+#     else:
+#         print("Такой страны нет в словаре.")
+#
+#
+# while True:
+#     print(
+#         "*" * 20,
+#         "\nВыбор действия:\n"
+#         "1 - добавление данных\n"
+#         "2 - удаление данных\n"
+#         "3 - поиск данных\n"
+#         "4 - редактирование данных\n"
+#         "5 - просмотр данных\n"
+#         "6 - завершение работы")
+#     n = int(input("Ввод: "))
+#     if n == 6:
+#         print("Программа завершена")
+#         print("*" * 20)
+#         break
+#     elif n == 1:
+#         add_country()
+#     elif n == 2:
+#         remove_country()
+#     elif n == 3:
+#         search_country()
+#     elif n == 4:
+#         edit_country()
+#     elif n == 5:
+#         load_data()
+
+# import json
 
 
-def add_country():
-    country = input("Введите название страны: ")
-    capital = input("Введите название столицы: ")
-    countries[country] = capital
-    save_data()
+# class CountryCapital:
+#     @staticmethod
+#     def load(file_name):
+#         try:
+#             data = json.load(open(file_name, encoding="utf-8"))
+#         except FileNotFoundError:
+#             data = {}
+#         finally:
+#             return data
+#
+#     @staticmethod
+#     def add_country(file_name):
+#         new_country = input("Введите название страны: ").lower()
+#         new_capital = input("Введите название столицы: ").lower()
+#
+#         # try:
+#         #     data = json.load(open(file_name, encoding="utf-8"))
+#         # except FileNotFoundError:
+#         #     data = {}
+#         data = CountryCapital.load(file_name)
+#
+#         data[new_country] = new_capital
+#
+#         with open(file_name, "w", encoding="utf-8") as f:
+#             json.dump(data, f, indent=2, ensure_ascii=False)
+#
+#     @staticmethod
+#     def load_from_file(file_name):
+#         with open(file_name, encoding="utf-8") as f:
+#             print({k.capitalize(): v.capitalize() for k, v in json.load(f).items()})
+#
+#     @staticmethod
+#     def delete_country(file_name):
+#         del_country = input("Введите название страны: ").lower()
+#
+#         # try:
+#         #     data = json.load(open(file_name, encoding="utf-8"))
+#         # except FileNotFoundError:
+#         #     data = {}
+#         data = CountryCapital.load(file_name)
+#
+#         if del_country in data:
+#             del data[del_country]
+#
+#             with open(file_name, "w", encoding="utf-8") as f:
+#                 json.dump(data, f, indent=2, ensure_ascii=False)
+#
+#         else:
+#             print("Такой страны в базе нет")
+#
+#     @staticmethod
+#     def search_data(file_name):
+#         country = input("Введите название страны: ").lower()
+#
+#         # try:
+#         #     data = json.load(open(file_name, encoding="utf-8"))
+#         # except FileNotFoundError:
+#         #     data = {}
+#         data = CountryCapital.load(file_name)
+#
+#         if country in data:
+#             print(f"Страны {country.capitalize()} столица {data[country].capitalize()} есть в словаре")
+#         else:
+#             print(f"Страны {country.capitalize()} нет в словаре")
+#
+#     @staticmethod
+#     def edit_data(file_name):
+#         country = input("Введите страну для корректировки: ").lower()
+#         new_capital = input("Введите новое название столицы: ").lower()
+#
+#         # try:
+#         #     data = json.load(open(file_name, encoding="utf-8"))
+#         # except FileNotFoundError:
+#         #     data = {}
+#         data = CountryCapital.load(file_name)
+#
+#         if country in data:
+#             data[country] = new_capital
+#             with open(file_name, "w", encoding="utf-8") as f:
+#                 json.dump(data, f, indent=2, ensure_ascii=False)
+#         else:
+#             print("Такой страны в базе нет")
+#
+#
+# file = "list_capital.json"
+# while True:
+#     index = input("Выбор действия:\n1-добавление\n2-удаления\n3-поиск\n4-редактирование\n5-просмотр\n6-завершение\nВвод: ")
+#     if index == "1":
+#         CountryCapital.add_country(file)
+#     elif index == "2":
+#         CountryCapital.delete_country(file)
+#     elif index == "3":
+#         CountryCapital.search_data(file)
+#     elif index == "4":
+#         CountryCapital.edit_data(file)
+#     elif index == "5":
+#         CountryCapital.load_from_file(file)
+#     elif index == "6":
+#         break
+#     else:
+#         print("Введен некорректный номер")
 
 
-def save_data():
-    with open("countries.json", "w") as f:
-        json.dump(countries, f)
-        print("Данные сохранены.")
+import csv
+import requests
+import json
 
 
-def load_data():
-    global countries
-    try:
-        with open("countries.json", "r") as f:
-            print(json.load(f))
-    except FileNotFoundError:
-        print("Файл с данными не найден.")
+response = requests.get("https://jsonplaceholder.typicode.com/todos")
+todos = json.loads(response.text)
 
 
-def remove_country():
-    country = input("Введите название страны для удаления: ")
-    if country in countries:
-        del countries[country]
-        save_data()
-    else:
-        print("Такой страны нет в словаре.")
-
-
-def search_country():
-    country = input("Введите название страны для поиска: ")
-    if country in countries:
-        print(f"Столица страны {country}: {countries[country]}")
-    else:
-        print("Такой страны нет в словаре.")
-
-
-def edit_country():
-    country = input("Введите название страны для редактирования: ")
-    if country in countries:
-        new_capital = input("Введите новое название столицы: ")
-        countries[country] = new_capital
-        save_data()
-    else:
-        print("Такой страны нет в словаре.")
-
-
-while True:
-    print(
-        "*" * 20,
-        "\nВыбор действия:\n"
-        "1 - добавление данных\n"
-        "2 - удаление данных\n"
-        "3 - поиск данных\n"
-        "4 - редактирование данных\n"
-        "5 - просмотр данных\n"
-        "6 - завершение работы")
-    n = int(input("Ввод: "))
-    if n == 6:
-        print("Программа завершена")
-        print("*" * 20)
-        break
-    elif n == 1:
-        add_country()
-    elif n == 2:
-        remove_country()
-    elif n == 3:
-        search_country()
-    elif n == 4:
-        edit_country()
-    elif n == 5:
-        load_data()
-
-
-
-
-
-
+with open("todos_writer.csv", "w") as f:
+    writer = csv.DictWriter(f, delimiter=";", lineterminator="\r", fieldnames=todos[0].keys())
+    writer.writeheader()
+    for d in todos:
+        writer.writerow(d)
