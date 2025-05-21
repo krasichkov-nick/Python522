@@ -1347,17 +1347,17 @@ import json
 #         print("Введен некорректный номер")
 
 
-import csv
-import requests
-import json
-
-
-response = requests.get("https://jsonplaceholder.typicode.com/todos")
-todos = json.loads(response.text)
-
-
-with open("todos_writer.csv", "w") as f:
-    writer = csv.DictWriter(f, delimiter=";", lineterminator="\r", fieldnames=todos[0].keys())
-    writer.writeheader()
-    for d in todos:
-        writer.writerow(d)
+# import csv
+# import requests
+# import json
+#
+#
+# response = requests.get("https://jsonplaceholder.typicode.com/todos")
+# todos = json.loads(response.text)
+#
+#
+# with open("todos_writer.csv", "w") as f:
+#     writer = csv.DictWriter(f, delimiter=";", lineterminator="\r", fieldnames=todos[0].keys())
+#     writer.writeheader()
+#     for d in todos:
+#         writer.writerow(d)
