@@ -1,4 +1,4 @@
-1.	Выведите перечень сумм заказов продавца Rifkin.
+1.Выведите перечень сумм заказов продавца Rifkin.
 
 SELECT o.amt
 FROM Salespeople s, Orders o
@@ -12,7 +12,7 @@ WHERE snum =
     WHERE sname= 'Rifkin')
 
 
-2.	Определите  комиссионные всех продавцов, обслуживающих заказчиков в Риме
+2.Определите  комиссионные всех продавцов, обслуживающих заказчиков в Риме
 
 SELECT s.com
 FROM Salespeople s, Customers c
@@ -25,7 +25,7 @@ WHERE snum IN
     FROM Customers
     WHERE city='Rome')
 
-3.	Напишите запрос, который определит заказчиков имеющих рейтинг ниже среднего.
+3.Напишите запрос, который определит заказчиков имеющих рейтинг ниже среднего.
 
 SELECT cname, rating
 FROM Customers
@@ -33,7 +33,7 @@ WHERE rating <
     (SELECT AVG(rating)
     FROM Customers)
 
-4.	Определите города проживания заказчиков с наименьшим рейтингом.
+4.Определите города проживания заказчиков с наименьшим рейтингом.
 
 SELECT city, MIN(rating)
 FROM Customers
@@ -42,7 +42,7 @@ HAVING MIN(rating) IN
     (SELECT MIN(rating)
     FROM Customers)
 
-5.	Напишите запрос, который выводил бы заказы клиента Liu
+5.Напишите запрос, который выводил бы заказы клиента Liu
 
 SELECT o.amt
 FROM Orders o, Customers c
@@ -55,7 +55,7 @@ WHERE cnum IN
     FROM Customers
     WHERE cname="Liu")
 
-6.	Определите наибольшие комиссионные продавца для Рима.
+6.Определите наибольшие комиссионные продавца для Рима.
 
 SELECT MAX(com)
 FROM Salespeople
@@ -68,7 +68,7 @@ SELECT MAX(s.com)
 FROM Salespeople s, Customers c
 WHERE s.snum=c.snum AND c.city='Rome'
 
-7.	Напишите запрос который выведет всех клиентов обслуживаемых продавцом Motiка.
+7.Напишите запрос который выведет всех клиентов обслуживаемых продавцом Motiка.
 
 SELECT c.cname
 FROM Salespeople s, Customers c
@@ -81,7 +81,7 @@ WHERE snum IN
     FROM Salespeople
     WHERE sname="Motika")
 
-8.	Напишите запрос, который выведет максимальный рейтинг заказчика для продавцов имеющих комиссионные больше 0,11%.
+8.Напишите запрос, который выведет максимальный рейтинг заказчика для продавцов имеющих комиссионные больше 0,11%.
 
 SELECT MAX(rating)
 FROM Customers
