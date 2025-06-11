@@ -1,0 +1,18 @@
+li{
+    color: black;
+}
+.orange_marker{
+    list-style-image: url(orange_marker.png);
+}
+.green_marker{
+    list-style-image: url(green_marker.png);
+}
+.red_marker{
+    list-style-image: url(red_marker.png);
+}
+.blue_marker{
+    list-style-image: url(blue_marker.png);
+}
+.black_marker{
+    list-style-image: url(black_marker.png);
+}
