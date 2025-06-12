@@ -1,0 +1,23 @@
+table{
+    background: #23f0f7;
+    width: 700px;
+    border: 1px, solid black;
+}
+tr, td{
+    border: 1px, solid black
+}
+.brown{
+    background: rgb(101, 30, 30);
+}
+.yellow{
+    background: yellow;
+}
+.blue{
+    background: blue;
+}
+.green{
+    background: green;
+}
+.red{
+    background: red;
+}
