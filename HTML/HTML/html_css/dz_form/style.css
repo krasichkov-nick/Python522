@@ -1,0 +1,39 @@
+.one {
+    float: left;
+}
+
+.text1 {
+    text-align: right;
+}
+
+h1 {
+    clear: left;
+}
+
+table {
+    border: 3px solid rgb(22, 207, 220);
+}
+
+h3 {
+    color: blue;
+}
+
+td {
+    font-weight: bolder;
+}
+
+.text2 {
+    color: grey;
+    font-weight: 100;
+}
+
+.text3 {
+    font-weight: 100;
+}
+
+.right {
+    text-align: right;
+}
+.center{
+    text-align: center;
+}
