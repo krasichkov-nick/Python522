@@ -1,0 +1,51 @@
+.animation{
+    border: 1px solid brown;
+    background: orange;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: anim 6s infinite;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-fill-mode: forwards;
+}
+@keyframes anim{
+    0%{
+        margin-left: 3px;
+        margin-top: 3px;
+        background: green;
+    }
+    20%{
+        margin-left: 100px;
+        margin-top: 300px;
+        background: green;
+        height: 80px;
+    }
+    40%{
+        margin-left: 200px;
+        margin-top: 100px;
+        background: rgb(231, 15, 206);
+        height: 100px;
+        width: 90px;
+        
+    }
+    60%{
+        margin-left: 300px;
+        margin-top: 300px;
+        height: 80px;
+        background: silver;
+    }
+    80%{
+        margin-left: 400px;
+        margin-top: 170px;
+        height: 100px;
+        width: 90px;
+        background: blue;
+    }
+    100%{
+        margin-left: 450px;
+        margin-top: 300px;
+        height: 90px;
+        background: rgb(10, 201, 128);
+    }
+    
+}
