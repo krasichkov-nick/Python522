@@ -1159,9 +1159,8 @@
 # for i in range(5):
 #     write_json(gen_person())
 
-
-import json
-
+#
+# import json
 
 # countries = {}
 #
@@ -1361,3 +1360,42 @@ import json
 #     writer.writeheader()
 #     for d in todos:
 #         writer.writerow(d)
+
+# c = frozenset([1, 2, 3]) == {1, 2, 3}
+# print(c)
+
+from bs4 import BeautifulSoup
+import requests
+import csv
+
+
+def get_html(url):
+    r = requests.get(url)
+    return r.text
+
+
+def write_csv(data):
+    with open("dz_plugins.csv", "a") as f:
+        writer = csv.writer(f, delimiter=";", lineterminator="\r")
+        writer.writerow([data["name"], data["url"], data["price"]])
+
+
+def get_data(html):
+    soup = BeautifulSoup(html, "lxml")
+    p1 = soup.find_all("div", class_="item")
+    for item in p1:
+        name = item.find("a", class_="name").text
+        url = item.find("div", class_="buyfloat").find("a").get("href")
+        price = item.find("i", class_="pprice").text
+
+        data = {"name": name, "url": url, "price": price}
+        write_csv(data)
+
+
+def main():
+    url = "https://pos-center.ru/tag-grocery-store/"
+    get_data(get_html(url))
+
+
+if __name__ == '__main__':
+    main()
