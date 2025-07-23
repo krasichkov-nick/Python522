@@ -664,42 +664,484 @@ console.log(select_tag); */
 // js.splice(-2, 0, "но", "очень", "интересный");
 // console.log(js);
 
-document.writeln("<div id='demonstration'></div>");
-let div = document.querySelector("#demonstration");
-div.innerHTML = `Термоста́т — прибор для поддержания постоянной температуры. Поддержание температуры
-обеспечивается либо за счёт использования терморегуляторов, либо осуществлением фазового
-перехода (например, таяние льда). Для уменьшения потерь тепла или холода термостаты, как
-правило, теплоизолируют. Но не всегда. Широко известны автомобильные моторы, где летом нет
-никакой теплоизоляции и за счёт действия восковых термостатов поддерживается постоянная
-температура. Другим примером термостата, широко используемого в быту, является холодильник.`;
+// document.writeln("<div id='demonstration'></div>");
+// let div = document.querySelector("#demonstration");
+// div.innerHTML = `Термоста́т — прибор для поддержания постоянной температуры. Поддержание температуры
+// обеспечивается либо за счёт использования терморегуляторов, либо осуществлением фазового
+// перехода (например, таяние льда). Для уменьшения потерь тепла или холода термостаты, как
+// правило, теплоизолируют. Но не всегда. Широко известны автомобильные моторы, где летом нет
+// никакой теплоизоляции и за счёт действия восковых термостатов поддерживается постоянная
+// температура. Другим примером термостата, широко используемого в быту, является холодильник.`;
 
-div.style.backgroundColor = "yellow";
-div.style.color = "black";
-div.style.width = "256px";
-div.style.height = "256px";
-div.style.overflow = "scroll";
-div.style.outline = "1px dashed red";
+// div.style.backgroundColor = "yellow";
+// div.style.color = "black";
+// div.style.width = "256px";
+// div.style.height = "256px";
+// div.style.overflow = "scroll";
+// div.style.outline = "1px dashed red";
 
-div.className = "resetFont";
+// div.className = "resetFont";
 
-let res = document.querySelector(".resetFont");
-res.style.fontSize = "20pt";
-res.style.fontWeight = "400";
-res.style.textDecoration = "underline";
+// let res = document.querySelector(".resetFont");
+// res.style.fontSize = "20pt";
+// res.style.fontWeight = "400";
+// res.style.textDecoration = "underline";
+
+// let st = ["Фамилия", "Имя", "Очество"]
+// let fio = new Array(3);
+// for(let i=0; i<fio.length; i++){
+//     // fio[i] = prompt("Введите данные:\n" + st[i]);
+//     fio[i] = prompt("Введите данные:", st[i]);
+// }
+
+// alert(fio.join(" "));
+
+// let js = ["нужно", "учить", "Яваскрипт"];
+// console.log(js);
+
+// console.log(js.pop());
+// console.log(js);
+
+// js.push("Яваскрипт", "!");
+// console.log(js);
+
+// console.log(js.shift());
+// console.log(js);
+
+// js.unshift("Почему", "нужно");
+// console.log(js);
+
+// // let arr = js.slice(1,3);
+// // console.log(arr);
+// // console.log(js.slice(1));
+
+// js.splice(0, 1);
+// console.log(js);
+
+// js.splice(0,2,"Мы", "изучаем");
+// console.log(js);
+
+// js.splice(2,0,"сложный", "язык");
+// console.log(js);
+
+// js.splice(-2, 0, "но", "очень", "интересный");
+// console.log(js);
+
+// js.reverse();
+// console.log(js);
+
+// js.sort();
+// console.log(js);
+
+// let n = [1,5,15,2]
+// n.sort((a,b) => a-b);
+// console.log(n);
+
+// Function Declaration
+
+// function caption(a,b,c){
+//     let res = a+b+c;
+//     return res;
+// }
 
 
+// let test = caption(10, 20, 30);
+// console.log(test);
+
+// function showArrayContent(arrayToShow) {
+//     if(arrayToShow.length == 1){
+//         return arrayToShow;
+//     } else {
+//         let last = arrayToShow.pop();
+//         let str = arrayToShow.join(", ")
+//         let res = str + " и " + last;
+//         return res
+//     }
+
+// }
+
+// // Определяем массивы.
+
+// let a = new Array('Текст');
+// let b = new Array('день', 'ночь');
+// let c = new Array('зима', 'весна', 'лета', 'осень');
+
+// alert(showArrayContent(a)); // Выводим содержимое массивов,
+// alert(showArrayContent(b)); // используя созданную выше функцию.
+// alert(showArrayContent(c));
+
+// Function Expression
+
+// let sum1 = function (a, b) {
+//     return a + b;
+// }
+// alert(sum1(2, 3));
+
+// function sum2 (a, b){
+//     return a+b;
+// }
+
+// alert(sum2(20,30));
 
 
+// Immediately Invoked Function Expression (IIFE) - самовызывающаяся функция(анонимная)
+
+// (function(){
+//     alert("Привет мир");
+// })();
+
+// (function(n){
+//     alert(n*n);
+// })(4);
+
+// let a = 4;
+// alert(a);
+
+// function caption(a,b,c){
+//     let res = a+b+c;
+//     return res;
+// }
+
+// // Arrow Function
+
+// // let test = (a,b,c) => a+b+c;
+// let test = (a,b,c) => {
+//     let res = a+b+c;
+//     return res;
+// }
+// alert(test(10,20,30));
+
+// let hello = () => alert("hello");
+
+// hello();
+
+// let = hello = n => alert("hello, " + n);
+// hello("Igor");
+
+// document.writeln(Math.floor(7.9) + "<br>");
+// document.writeln(Math.ceil(7.1) + "<br>");
+// document.writeln(Math.round(7.5) + "<br>");
+
+// (function(min, max){
+//     document.writeln(Math.floor(Math.random() * (max - min) + min) + "<br>");
+// }(2,9));
+
+// document.writeln(Math.floor(Math.random() * 9) + "<br>"); // от 0 до 9
+// document.writeln(Math.floor(Math.random() * 7 + 2) + "<br>"); // от 2 до 9
+// document.writeln(Math.floor(Math.random() * 7 + 7) + "<br>"); // от 2 до 9
+
+// let randMas = ["Цикл", "Массив", "Условие", "Функция"];
+// document.writeln(pickRandom(randMas))
+
+// function pickRandom(mas){
+//     return mas[Math.floor(Math.random()*mas.length)];
+// }
+
+// let j = 2;
+
+// function ch{
+//     j = 1;
+//     // console.log(j);
+
+// }
+// ch();
+// console.log(i);
+
+// document.writeln("<div id='block'></div>");
+// let id = document.getElementById("block");
+
+// id.style.width = "100px";
+// id.style.height = "100px";
+// // id.style.background = "orange";
+
+// let createColor = () => {
+//     let r = Math.floor(Math.random() * 256);
+//     let g = Math.floor(Math.random() * 256);
+//     let b = Math.floor(Math.random() * 256);
+//     id.style.background = `rgb(${r}, ${g}, ${b})`;
+// }
+
+// createColor();
+
+// function test(a,b){
+//     alert("a="+a+", b="+b);
+// }
+
+// test(1);
+// test(1,2);
+// test(1,2,3);
+
+// function test(){
+//     console.log(arguments[0]);
+//     console.log(arguments[1]);
+//     console.log(arguments[2]);
+//     console.log(arguments[3]);
+// }
+
+// test(1,2,3);
+
+// function sum(){
+//     let res = 0;
+//     for(let i=0; i<arguments.length; i++){
+//         res += arguments[i];
+//     }
+//     let a = "hello";
+//     return [res, a];
+// }
+
+// document.writeln(sum() + "</br>");
+// document.writeln(sum(1) + "</br>");
+// document.writeln(sum(1,2) + "</br>");
+// document.writeln(sum(1,2,3) + "</br>");
+// document.writeln(sum(1,2,3,4) + "</br>");
+// document.writeln(sum(1,2,3,4,5) + "</br>");
+
+// function hello(name){
+//     name = name || "незнакомец";
+//     document.writeln("Привет, " + name + "! <br>");
+// }
+// hello("Иван");
+// hello();
+
+// function square(width=300, height=200, fon="green"){
+//     document.writeln("<div id='shape'></div>");
+//     let div = document.querySelector("#shape");
+
+//     div.style.background = fon;
+//     div.style.width = width + "px";
+//     div.style.height = height + "px";
+
+// }
+
+// square(350, 450, "gold");
+// square(150, 100);
+// square(100);
+// square();
+
+// function hello(){
+//     alert("Привет");
+// }
+// alert(hello);
+
+// let str = "I\'m a JavaScript \"programmer\"";
+// document.writeln(str + "<br>");
+// document.writeln(str.length + "<br>");
+// document.writeln(str[2] + "<br>");
+
+// // str[2] = 'y'
+// str = str[2] + "y";
+// document.writeln(str + "<br>");
+
+// let s = "абббабввбабвбвббабвббабв";
+//  couterLetters(s);
+//  function couterLetters(str){
+//     let letters = ["а", "б", "в"]
+//     for(let i = 0; i< letters.length; i++){
+//         let count = 0;
+//         for(let j=0; j<str.length; j++){
+//             if(str[j] == letters[i]){
+//                 count++;
+//             }
+//         }
+//         document.writeln("Символ '" + letters[i] + "'встретился " + count + " раз<br>");
+//     }
+
+//  }
+
+// let str = "I\'m a JavaScript \"programmer\"";
+// document.writeln(str[6] + "<br>");
+// document.writeln(str.charAt[6] + "<br>");
+
+// document.writeln(str.toLowerCase() + "<br>");
+// document.writeln(str.toUpperCase() + "<br>");
+// document.writeln(str + "<br>");
+
+// let n = prompt("Введите имя", "нИкиТа");
+// alert(first(n));
+
+// function first(str){
+//     let firstLetter = str.charAt(0).toUpperCase();
+//     for(let i=1; i<str.length; i++){
+//         firstLetter += str[i].toLowerCase();
+//     }
+//     return firstLetter;
+// }
+
+// let str = "I\'m a JavaScript \"programmer\"";
+// let str1 = "Я учу Ява Скрипт. Мне нравится Ява Скрипт";
+// str = str.concat(str1);
+// document.writeln(str + "<br>");
+
+// document.writeln(str.indexOf("Ява", 7) + "<br>")
+// document.writeln(str.lastIndexOf("Ява") + "<br>")
+
+// // let email;
+// // do{
+// //     email = prompt("Введите email:");
+// //     if(email.indexOf("@")==-1){
+// //         alert("Некорректно. Повторите операцию.");
+// //         continue;
+// //     }
+// //     break;
+// // }while(true);
+
+// // alert("Спасибо за сотрудничество");
+
+// document.writeln(str.split(".") + "<br>")
+// console.log(str.split(".", 2));
+
+// document.writeln(str.slice(0,3) + "<br>")
+// document.writeln(str.slice(-23, -10) + "<br>")
+// document.writeln(str.substring(0,3) + "<br>")
+
+// let style = prompt("Введите свойство CSS", "background-color");
+// alert(replace(style));
 
 
+// function replace(str){
+//     let mas = str.split("-");
+//     for(let i = 1; i < mas.length; i++){
+//         mas[i] = mas[i].charAt(0).toUpperCase() + mas.slice(1);
+//     }
+//     return mas.join('');
+// }
+// function loadStr() {
+//     alert("Страница была загружена");
+// }
+
+// let m = document.getElementById("mas").style.color = "red";
+
+// function over() {
+//     m.style.color = "red";
+// }
+// function out() {
+//     m.style.color = "yellow";
+// }
+
+// function change() {
+//     let id = document.getElementById("title");
+//     id.style.color = "blue";
+// }
+
+// function randomBg() {
+//     // document.body.style.background="rgb("+rand()+","+rand()+"+rand()+")";
+//     document.body.style.background = `rgb(${rand()}, ${rand()}, ${rand()})`;
+// }
+
+// function rand() {
+//     return Math.floor(Math.random() * 256);
+// }
+
+// let image = document.getElementById("image");
+
+// function on() {
+//     image.src = "night.png";
+// }
+// function off() {
+//     image.src = "day.png";
+// }
+
+// let but = document.getElementById("but");
+
+// but.onclick = function(){
+//     alert("Спасибо");
+// }
+
+// but.onclick = hello;
+
+// function hello(){
+//     alert("Спасибо")
+// }
+
+// function change(id){
+//     id.innerHTML = "Новый текст"
+// }
+
+// function setColor(elem){
+//     document.body.style.background = elem.className;
+// }
+
+// let el = document.querySelector("#but");
+// el.addEventListener("click", function(){
+//     el.innerHTML="Новый текст";
+// })
+// el.addEventListener("contextmenu", setColor)
+
+// function setColor(){
+//     el.style.color = "green";
+//     el.style.background = "yellow";
+// }
+
+// document.addEventListener("mousemove", function(event){
+//     let c = document.querySelector("#elem");
+//     let x = event.clientX
+//     let y = event.clientY
+//     c.textContent = "X = " + x + ", Y = " + y;
+//     c.addEventListener("dblclick", function(event){
+//         event.target.style.background="red";
+//     })
+// })
+
+// let el = document.querySelector("#but");
+
+// el.addEventListener("click", handler);
+
+// function handler(){
+//     alert("Спасибо");
+//     el.removeEventListener("click", handler);
+// }
+
+// setTimeout(функция, задержка)
+
+// setTimeout("alert('Text')", 3000);
+
+// setTimeout(hello, 3000, "Hi", "friend");
+// setTimeout('hello("Hi", "friend")', 3000);
+
+// function hello(h, n){
+//     alert(h + ", " + n + "!");
+// }
+
+// document.writeln("<div id='dt'>Создание анимированного текста</div>")
+
+// let id = document.querySelector("#dt");
+// let text = document.querySelector("#dt").innerHTML;
+// console.log(id);
+
+// let i = 0;
+
+// window.addEventListener('load', animText);
+
+// function animText(){
+//     id.innerHTML = text.substring(0, i);
+//     i++;
+//     if(i>text.length){
+//         i = 0;
+//     }
+//     setTimeout(animText, 500);
+// }
 
 
+// let d = new Date();
+// document.writeln(d + "<br>");
+// document.writeln(d.toDateString() + "<br>");
+// document.writeln(d.getFullYear() + "<br>");
+// document.writeln(d.getMonth() + 1 + "<br>");
+// document.writeln(d.getDate() + "<br>");
+// document.writeln(d.getDay() + "<br>");
 
+// let mounth = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'декабря'];
+// let day = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота']
+// let d = new Date();
+// let fullDate = "Сегодня: " + d.getDate() + " " + mounth[d.getMonth()] + " " + d.getFullYear() + " год," + " " + day[d.getDay()];
 
+// document.writeln(fullDate);
 
+let image = document.getElementById("image");
 
-
-
-
-
-
+function on() {
+    image.src = "1.png";
+}
+function off() {
+    image.src = "";
+}
