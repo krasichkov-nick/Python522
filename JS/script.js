@@ -1137,11 +1137,33 @@ console.log(select_tag); */
 
 // document.writeln(fullDate);
 
-let image = document.getElementById("image");
+// let image = document.getElementById("image");
 
-function on() {
-    image.src = "1.png";
+// function on() {
+//     image.src = "1.png";
+// }
+// function off() {
+//     image.src = "";
+// }
+
+let month = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь']
+
+function createColor(){
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    let styleColor = `rgb(${r}, ${g}, ${b})`;
+    return styleColor
 }
-function off() {
-    image.src = "";
+
+for (let i = 0; i < month.length; i++) {
+    document.writeln("<div id='" + i + "'></div>");
+    let id = document.querySelectorAll("div")[i];
+    id.style.background = createColor();
+    id.innerHTML = month[i];
+    id.style.fontSize = "20pt";
+    id.style.fontWeight = "bold";
+    id.style.height = "40px";
+    id.style.textAlign = "center"
+    
 }
