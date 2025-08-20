@@ -1146,24 +1146,341 @@ console.log(select_tag); */
 //     image.src = "";
 // }
 
-let month = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь']
+// let month = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь']
 
-function createColor(){
-    let r = Math.floor(Math.random() * 256);
-    let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
-    let styleColor = `rgb(${r}, ${g}, ${b})`;
-    return styleColor
-}
+// function createColor(){
+//     let r = Math.floor(Math.random() * 256);
+//     let g = Math.floor(Math.random() * 256);
+//     let b = Math.floor(Math.random() * 256);
+//     let styleColor = `rgb(${r}, ${g}, ${b})`;
+//     return styleColor
+// }
 
-for (let i = 0; i < month.length; i++) {
-    document.writeln("<div id='" + i + "'></div>");
-    let id = document.querySelectorAll("div")[i];
-    id.style.background = createColor();
-    id.innerHTML = month[i];
-    id.style.fontSize = "20pt";
-    id.style.fontWeight = "bold";
-    id.style.height = "40px";
-    id.style.textAlign = "center"
+// for (let i = 0; i < month.length; i++) {
+//     document.writeln("<div id='" + i + "'></div>");
+//     let id = document.querySelectorAll("div")[i];
+//     id.style.background = createColor();
+//     id.innerHTML = month[i];
+//     id.style.fontSize = "20pt";
+//     id.style.fontWeight = "bold";
+//     id.style.height = "40px";
+//     id.style.textAlign = "center"
     
+// }
+
+// setInterval(функция, интервал)
+
+// document.writeln("<input type='button' value='Start / Stop'>");
+// document.querySelector('input').addEventListener("click", startStop);
+
+// let act, run;
+// function startStop(){
+//     if(!run){
+//       act = setInterval(setColor, 1000);
+//     //   run = true; 
+//     }else{
+//         clearInterval(act);
+//         // run = false;
+//     }
+//     run = !run;
+    
+//     // console.log(act);
+    
+// }
+
+// // setInterval(setColor, 1000);
+
+// function setColor(){
+//     let x = document.body;
+//     x.style.background = x.style.background == "yellow" ? "orange": "yellow";
+// }
+
+// document.writeln("<div id='text'>Здесь будет отображаться текущее время</div>");
+// window.addEventListener('load', () => setInterval(time, 1000));
+
+// function time(){
+//     let d = new Date();
+//     let hour = d.getHours();
+//     let min = d.getMinutes();
+//     let sec = d.getSeconds();
+
+//     if(min<10){
+//         min = "0" + min;
+//     }
+//     if(sec<10){
+//         sec = "0" + sec;
+//     }
+
+//     let times = hour + ":" + min + ":" + sec;
+//     document.querySelector("#text").innerHTML = times;
+    
+// }
+
+// let imgTime = ['c0.gif','c1.gif','c2.gif','c3.gif','c4.gif','c5.gif','c6.gif','c7.gif','c8.gif', 'c9.gif'];
+// let t = document.querySelectorAll("#clock img");
+
+// clock();
+
+// function clock() {
+//     let time = new Date();
+//     let hours = time.getHours();
+//     let mins = time.getMinutes();
+//     let seconds = time.getSeconds();
+
+//     getImg(hours, mins, seconds);
+//     setInterval(clock, 1000);    
+// }
+
+// function getImg(h, m, s){
+//     t[0].src = imgTime[parseInt(h / 10)];
+//     t[1].src = imgTime[h % 10];
+
+//     t[3].src = imgTime[Math.floor(m / 10)];
+//     t[4].src = imgTime[m % 10];
+
+//     t[6].src = imgTime[Math.floor(s / 10)];
+//     t[7].src = imgTime[s % 10];
+// }
+
+// document.writeln(`
+//     <input type='text' size='4' id='timer' value='0.0'>
+//     <input type='button' value='Start / Stop'>
+//     <input type='button' value='clear'>
+//     `);
+// document.querySelector("input[value='Start / Stop']").addEventListener('click', startTimer);
+
+// document.querySelector("input[value='clear']").addEventListener('click', resetTimer);
+
+// let id, flag;
+// function startTimer(){
+//     if(!flag){
+//         id = setInterval(incTimer, 100);
+//     } else {
+//         clearInterval(id);
+//     }
+//     flag = !flag;
+// }
+
+// let tsec = 0;
+// function incTimer(){
+//     tsec++;
+//     let t = tsec/10.0;
+//     if(tsec%10==0){
+//         t+=".0";
+//     }
+
+//     document.getElementById("timer").value = t;
+// }
+
+// function resetTimer(){
+//     document.getElementById("timer").value = "0.0";
+//     tsec = 0;
+// }
+
+// let a = document.querySelector("#cl");
+// a.addEventListener("click", myMove);
+
+// function myMove(){
+//     let elem = document.getElementById("animate");
+//     let pos = 0;
+//     let id = setInterval(frame, 5);
+
+//     function frame(){
+//         // a.style.display="none";
+//         // a.style.visibility="hidden";
+//         if(pos == 350){
+//             // a.style.display="block";
+//             // a.style.visibility="visible";
+//             a.addEventListener("click", myMove)
+//             clearInterval(id);
+//         } else {
+//             a.removeEventListener("click", myMove)
+//             pos++;
+//             elem.style.top = pos + "px";
+//             elem.style.left = pos + "px";
+//         }
+        
+//     }
+    
+
+// }
+
+// document.image.border = 1;
+// document.writeln("<br>Ширина изображения: " + document.image.width + "<br>");
+// document.writeln("<br>Высота изображения: " + document.image.height + "<br>");
+
+// document.image.src='blue_star.png';
+
+// let array = new Array('2.jpg', '3.jpg', '4.jpg');
+// document.writeln("<input type='button' value='<' name='left'>");
+
+// document.writeln("<img src='"+ array[0] + "'>");
+
+// document.writeln("<input type='button' value='>' name='right'>");
+
+// document.getElementsByName('right')[0].addEventListener('click', arrowRight);
+
+// document.getElementsByName('rightleft')[0].addEventListener('click', arrowLeft);
+
+// let image = document.querySelector("img");
+// let i = 0;
+
+// function arrowRight(){
+//     i++;
+//     if(i == array.length){
+//         i = 0;
+//     }
+//     image.src = array[i];
+// }
+
+// function arrowLeft(){
+//     i--;
+//     if(i<0){
+//         i = array.length - 1;
+//     }
+//     image.src = array[i];
+// }
+
+
+// let a = 5;
+// let b = 10;
+// let c;
+
+// console.log("a =", a);
+// console.log("b =", b);
+
+// c = a;
+// a = b;
+// b = c;
+
+// document.writeln("<input type='number' min='1' max='3' value='3'>");
+// document.writeln("<input type='button' id='btn' value='кнопка'>");
+// let btn = document.querySelector("#btn");
+// btn.addEventListener("click", function(){
+//     let el = document.querySelector("input").value;
+//     console.log(el);
+// });
+
+
+// alert(document.documentElement.innerHTML)
+// alert(document.head)
+
+// let myTitle = document.querySelector("h1").innerHTML;
+// console.log(myTitle);
+
+// // let par = document.querySelector("p").firstChild.nodeValue;
+// // let par = document.querySelector("p").childNodes[0].nodeValue;
+// // let par = document.querySelector("p").nodeName;
+// let par = document.querySelector("p").firstChild.nodeType;
+// console.log(par);
+
+// let elem = document.querySelector("#root");
+
+// let tag = document.createElement("p");
+// let node = document.createTextNode("Новый текст!!!");
+// tag.append(node);
+
+// elem.append(tag); //первым дочерним
+// elem.prepend(tag); //последним дочерним
+// elem.before(tag); //перед выбранным id
+// elem.after(tag); //после выбранного id
+
+// elem.replaceWith(tag); //заменяет новым элементом выбранный id
+
+// let list = document.querySelector("#ul");
+// let newItem = document.createElement("li");
+// newItem.innerHTML = "Новый <i> элемент  списка</i>";
+
+// list.append(newItem);
+
+// document.querySelector("#move").addEventListener("click", change);
+// document.querySelector("#add").addEventListener("click", add);
+// let i = 1;
+
+// function add(){
+//     let elem = document.createElement("li");
+//     elem.innerHTML = "Water " + i;
+//     document.querySelector("#list2").append(elem);
+//     i++;
+// }
+
+// function change(){
+//     let elem = document.querySelector("#list2").lastChild;
+//     document.querySelector("#list1").append(elem)
+// }
+
+// let div = document.querySelector("#root");
+// div.insertAdjacentHTML("beforebegin", "<p>До выбранного элемента</p>")
+// div.insertAdjacentHTML("afterend", "<p>После выбранного элемента</p>");
+// div.insertAdjacentHTML("afterbegin", "<p>Первым внутри выбранного элемента</p>");
+// div.insertAdjacentHTML("beforebegin", "<p>Последним внутри выбранного элемента</p>");
+
+// let first = document.querySelector("#p1");
+// // first.remove();
+// let second = document.querySelector("#p2");
+
+// second.after(first)
+
+// let ul = document.querySelector("ul");
+// let clone = ul.cloneNode(true);
+
+// clone.querySelector("li").innerHTML = "Начало клонируемых элементов";
+// ul.after(clone);
+
+// let list = document.querySelector(".list");
+// list.insertAdjacentHTML("beforebegin", "<h2>Список </h2><hr>");
+// let list_inner = document.querySelector("h2");
+// list_inner.insertAdjacentText("beforeend", "планет");
+// list.insertAdjacentHTML("afterend", "<hr>");
+// let hr = document.querySelectorAll("hr")[1];
+// let h4 = document.createElement("h4");
+// h4.innerHTML = "Конец списка";
+// hr.insertAdjacentElement("afterend", h4);
+
+// let idRemove = setInterval(function(){
+//     let li = document.querySelector(".list > li:last-child");
+//     if(li === null){
+//        clearInterval(idRemove);
+//     //    alert("Список удален");
+//     list.insertAdjacentHTML("afterbegin", "<li>Список удален</li>");
+//     }else{
+//         li.remove();
+//     }
+// }, 500);
+
+// let div = document.querySelector("div");
+// div.className = "alert";
+// let activeDiv = document.querySelector(".active");
+// activeDiv.classList.add("hidden");
+// activeDiv.classList.remove("hidden");
+
+// activeDiv.classList.toggle("hidden");
+
+// activeDiv.classList.replace("active", "alert");
+
+// let frogImg = document.querySelector("#greenFrog");
+
+// console.log(frogImg.id);
+// console.log(frogImg.className);
+// console.log(frogImg.alt);
+// console.log(frogImg.title);
+// console.log(frogImg.src);
+// // console.log(frogImg.data-frog);
+
+// frogImg.title = "Новый текст подсказки";
+// console.log(frogImg.getAttribute('src'));
+// console.log(frogImg.getAttribute('data-frog'));
+
+// frogImg.setAttribute("src", "4.jpg")
+// // frogImg.removeAttribute("src");
+
+// console.log(frogImg.hasAttribute("src"));
+
+let buttons = document.querySelectorAll(".remove-button");
+for(let i=0; i<buttons.length; i++){
+    let button = buttons[i];
+    button.onclick = function(){
+        let elem = this.parentNode;
+        elem.parentNode.removeChild(elem);
+    }
 }
