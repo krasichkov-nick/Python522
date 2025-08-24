@@ -1476,11 +1476,47 @@ console.log(select_tag); */
 
 // console.log(frogImg.hasAttribute("src"));
 
-let buttons = document.querySelectorAll(".remove-button");
-for(let i=0; i<buttons.length; i++){
-    let button = buttons[i];
-    button.onclick = function(){
-        let elem = this.parentNode;
-        elem.parentNode.removeChild(elem);
+// let buttons = document.querySelectorAll(".remove-button");
+// for(let i=0; i<buttons.length; i++){
+//     let button = buttons[i];
+//     button.onclick = function(){
+//         let elem = this.parentNode;
+//         elem.parentNode.removeChild(elem);
+//     }
+// }
+
+
+// let array = new Array('2.jpg', '3.jpg', '4.jpg');
+// document.writeln("<img src='"+ array[0] +"'>");
+// document.writeln("<img src='"+ array[1] +"'>");
+// document.writeln("<img src='"+ array[2] +"'>");
+// document.writeln("<input type='button' value='поменять' name='btn'");
+
+let pics = ['2.jpg', '3.jpg', '4.jpg'];
+const inp1 = document.querySelector('#gear').querySelector('[type=text]'), inp2 = document.querySelector('#gear').querySelector('[type=text]:last-of-type'), res = document.querySelector('#res');
+
+function drawImg() {
+    res.innerHTML = pics.map( (x, i) => '<img src="' + x + '" alt="' + (i + 1) + '" title="Изображение ' + (i + 1) + '" />' ).join('');
+}
+
+function replacer() {
+    const v1 = +inp1.value - 1, v2 = +inp2.value - 1;
+    if (v1 + v2 > 0 && v1 != v2) {
+        [pics[v1], pics[v2]] = [pics[v2], pics[v1]];
+        drawImg();
+        inp1.value = inp2.value = '';
+    } else {
+        alert('Не выбраны изображения');
     }
 }
+
+document.querySelector('[type=button]').addEventListener('click', replacer);
+
+res.addEventListener('click', function(e) {
+    const targ = e.target;
+    if (targ.tagName == 'IMG') {
+        const ind = targ.alt;
+        !inp1.value ? inp1.value = ind : (!inp2.value ? inp2.value = ind : (inp1.value = inp2.value = '', inp1.value = ind));
+    }
+});
+drawImg()
