@@ -1492,31 +1492,182 @@ console.log(select_tag); */
 // document.writeln("<img src='"+ array[2] +"'>");
 // document.writeln("<input type='button' value='поменять' name='btn'");
 
-let pics = ['2.jpg', '3.jpg', '4.jpg'];
-const inp1 = document.querySelector('#gear').querySelector('[type=text]'), inp2 = document.querySelector('#gear').querySelector('[type=text]:last-of-type'), res = document.querySelector('#res');
+// let pics = ['2.jpg', '3.jpg', '4.jpg'];
+// const inp1 = document.querySelector('#gear').querySelector('[type=text]'), inp2 = document.querySelector('#gear').querySelector('[type=text]:last-of-type'), res = document.querySelector('#res');
 
-function drawImg() {
-    res.innerHTML = pics.map( (x, i) => '<img src="' + x + '" alt="' + (i + 1) + '" title="Изображение ' + (i + 1) + '" />' ).join('');
+// function drawImg() {
+//     res.innerHTML = pics.map( (x, i) => '<img src="' + x + '" alt="' + (i + 1) + '" title="Изображение ' + (i + 1) + '" />' ).join('');
+// }
+
+// function replacer() {
+//     const v1 = +inp1.value - 1, v2 = +inp2.value - 1;
+//     if (v1 + v2 > 0 && v1 != v2) {
+//         [pics[v1], pics[v2]] = [pics[v2], pics[v1]];
+//         drawImg();
+//         inp1.value = inp2.value = '';
+//     } else {
+//         alert('Не выбраны изображения');
+//     }
+// }
+
+// document.querySelector('[type=button]').addEventListener('click', replacer);
+
+// res.addEventListener('click', function(e) {
+//     const targ = e.target;
+//     if (targ.tagName == 'IMG') {
+//         const ind = targ.alt;
+//         !inp1.value ? inp1.value = ind : (!inp2.value ? inp2.value = ind : (inp1.value = inp2.value = '', inp1.value = ind));
+//     }
+// });
+// drawImg()
+
+// document.form1.style.background = "silver";
+// document.forms[0].style.padding = "16px";
+// document.forms['form1'].style.margin = "20px";
+// document.forms.form1.style.border = "2px dotted gray";
+
+
+// document.form1.name1.style.color = "blue";
+// document.form1['name1'].style.background = "aqua";
+
+// let but = document.querySelector("button");
+// let txt = document.querySelector("#text1");
+
+// but.addEventListener("click", content);
+
+// function content(){
+//     // alert(txt.value);
+//     console.log(txt.value);
+    
+// }
+
+// let input = document.querySelectorAll("input");
+// let form1 = document.forms.form1;
+
+// // console.log(form1.length);
+// // console.log(input.length);
+
+// for(let i=0; i < form1.length; i++){
+//     input[i].addEventListener("click", checkall);
+// }
+
+// let num;
+// function checkall(){
+//     num = 0;
+//     for(let i=0; i < form1.length; i++){
+//         if(input[i].checked && input[i].type == 'checkbox'){
+//             num++;
+//         }
+//     }
+//     if(num == 3){
+//         for(let i=0; i < form1.length; i++){
+//             if(!input[i].checked && input[i].type == 'checkbox'){
+//                 input[i].disabled = true;
+//             }
+//         }
+//     } else {
+//         for(let i=0; i < form1.length; i++){
+//             input[i].disabled = false;
+//         }
+//     }
+//     console.log(num);
+    
+// }
+
+// let input = document.querySelectorAll("input[type='checkbox']");
+// let form1 = document.forms.form1;
+
+// // console.log(form1.length);
+// // console.log(input.length);
+
+// for(let i=0; i < input.length; i++){
+//     input[i].addEventListener("click", checkall);
+// }
+
+// let num;
+// function checkall(){
+//     num = 0;
+//     for(let i=0; i < input.length; i++){
+//         if(input[i].checked){
+//             num++;
+//         }
+//     }
+//     if(num == 3){
+//         for(let i=0; i < input.length; i++){
+//             if(!input[i].checked){
+//                 input[i].disabled = true;
+//             }
+//         }
+//     } else {
+//         for(let i=0; i < input.length; i++){
+//             input[i].disabled = false;
+//         }
+//     }
+//     console.log(num);
+    
+// }
+
+// DZ
+
+let choose = document.querySelector("input[type='button']");
+choose.addEventListener("click", chooseColor);
+
+function chooseColor(){
+    let f = document.form3.radio2;
+    alert(f.value);
 }
 
-function replacer() {
-    const v1 = +inp1.value - 1, v2 = +inp2.value - 1;
-    if (v1 + v2 > 0 && v1 != v2) {
-        [pics[v1], pics[v2]] = [pics[v2], pics[v1]];
-        drawImg();
-        inp1.value = inp2.value = '';
-    } else {
-        alert('Не выбраны изображения');
-    }
-}
+// DZ
 
-document.querySelector('[type=button]').addEventListener('click', replacer);
+// Свойства для select:
+/*
+select.options - коллекция из подэлементов <option> (массив)
+select.value - значение выбранного в данный момент <option>
+select.selectedIndex - номер выбранного <option> (индекс)
+*/
 
-res.addEventListener('click', function(e) {
-    const targ = e.target;
-    if (targ.tagName == 'IMG') {
-        const ind = targ.alt;
-        !inp1.value ? inp1.value = ind : (!inp2.value ? inp2.value = ind : (inp1.value = inp2.value = '', inp1.value = ind));
-    }
-});
-drawImg()
+// let city = document.querySelector("#city");
+
+// city.addEventListener("click", setImage);
+
+// function setImage(){
+//     let cities = city.selectedIndex;
+//     // console.log(cities); // индекс
+//     let options = city.options;
+//     // console.log(options); //массив элементов
+//     let code = options[cities].value;
+//     // console.log(code);
+
+//     let div = document.querySelector("#image");
+//     div.innerHTML = "<img src='img/" + code + ".png'>"   
+// }
+
+// let gas = document.querySelectorAll(".petrol");
+
+// for(let i=0; i<gas.length; i++){
+//     gas[i].addEventListener("click", function(){
+//         let gallons = document.querySelector(".gallons").value;
+//         let amount = gas[i].getAttribute("data-price");
+//         let res = gallons * amount;
+//         let sum = document.querySelector(".sum");
+//         sum.innerHTML = res;
+//     });
+// }
+
+// let reg = document.querySelector(".register");
+
+// reg.addEventListener("submit", function(){
+//     let login = reg.login.value;
+//     let psd1 = reg.password1.value;
+//     let psd2 = reg.password2.value;
+
+//     if(!(login && psd1 && psd2)){
+//         alert("Все поля должны быть заполнены");
+//     }
+//     if(psd1 != psd2){
+//         alert("Пароли не совпадают");
+//     }
+//     if(psd1.length < 6){
+//         alert("Слишком короткий пароль")
+//     }
+// })
