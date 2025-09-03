@@ -1831,31 +1831,31 @@ $ - конец строки (после последовательностью �
 // text = text.replace(exp, "<a href='https://$1'>$1</a>");
 // document.writeln("<p>" + text + "</p>");
 
-// //dz
+//dz
 
-// let but = document.querySelector('input[type="button');
-// but.addEventListener("click", smsUser);
+let but = document.querySelector('input[type="button');
+but.addEventListener("click", smsUser);
 
 
-// function smsUser(){
-//     let sms = document.querySelector("textarea").value;
-//     let name = document.querySelector("input[type='text'").value;
-//     let regExpBBMail = /([\w.]+@[\w.]+\.[a-z]{2,3})/ig;
-//     sms = sms.replace(regExpBBMail, "<span style='color: red'>$1</span>")
-//     // document.writeln(`
-//     //     <fieldset>
-//     //         <legend>${name}</legend>
-//     //         <div>${sms}</div>
-//     //     <fieldset>`)
-//     let form = document.querySelector("form");
-//     form.insertAdjacentHTML("beforeend", `<fieldset>
-//     //         <legend>${name}</legend>
-//     //         <div>${sms}</div>
-//     //     <fieldset>`)
+function smsUser(){
+    let sms = document.querySelector("textarea").value;
+    let name = document.querySelector("input[type='text'").value;
+    let regExpBBMail = /([\w.]+@[\w.]+\.[a-z]{2,3})/ig;
+    sms = sms.replace(regExpBBMail, "<span style='color: red'>$1</span>")
+    // document.writeln(`
+    //     <fieldset>
+    //         <legend>${name}</legend>
+    //         <div>${sms}</div>
+    //     <fieldset>`)
+    let form = document.querySelector("form");
+    form.insertAdjacentHTML("beforeend", `<fieldset>
+    //         <legend>${name}</legend>
+    //         <div>${sms}</div>
+    //     <fieldset>`)
     
-// }
+}
 
-// //dz
+//dz
 
 // let str = "   текст   ";
 // str = str.replace(/^\s+|\s+$/g, "");
@@ -1905,23 +1905,23 @@ $ - конец строки (после последовательностью �
 
 // document.writeln(menu.title + ": " + menu.width + " x " + menu.height)
 
-// console.log(menu);
+// // console.log(menu);
 
-function Pupsik(pName, pAge, pJob){
-    this.name = pName;
-    this.age = pAge;
-    this.job = pJob;
+// function Pupsik(pName, pAge, pJob){
+//     this.name = pName;
+//     this.age = pAge;
+//     this.job = pJob;
 
-    this.who = function(){
-        document.writeln("Я " + "<b>" + this.name + "</b>" + " мне " + "<b>" + this.age + "</b>" + " лет. Я работаю " + "<b>" + this.job + "</b>" + "ом." + "<br>");
-    }
-}
+//     this.who = function(){
+//         document.writeln("Я " + "<b>" + this.name + "</b>" + " мне " + "<b>" + this.age + "</b>" + " лет. Я работаю " + "<b>" + this.job + "</b>" + "ом." + "<br>");
+//     }
+// }
 
-let dima = new Pupsik("Дмитрий", 26, "Дизайнер");
-let stas = new Pupsik("Станислав", 29, "Программист");
-let serg = new Pupsik("Сергей", 35, "Менеджер");
+// let dima = new Pupsik("Дмитрий", 26, "Дизайнер");
+// let stas = new Pupsik("Станислав", 29, "Программист");
+// let serg = new Pupsik("Сергей", 35, "Менеджер");
 
-dima.who();
-stas.who();
-serg.who();
+// dima.who();
+// stas.who();
+// serg.who();
 
