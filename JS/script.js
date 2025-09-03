@@ -1609,13 +1609,13 @@ console.log(select_tag); */
 
 // DZ
 
-let choose = document.querySelector("input[type='button']");
-choose.addEventListener("click", chooseColor);
+// let choose = document.querySelector("input[type='button']");
+// choose.addEventListener("click", chooseColor);
 
-function chooseColor(){
-    let f = document.form3.radio2;
-    alert(f.value);
-}
+// function chooseColor(){
+//     let f = document.form3.radio2;
+//     alert(f.value);
+// }
 
 // DZ
 
@@ -1671,3 +1671,257 @@ select.selectedIndex - номер выбранного <option> (индекс)
 //         alert("Слишком короткий пароль")
 //     }
 // })
+
+/*
+search() - возвращает позицию , на которой регулярное выражение совпадает с вызывающей строкой. Возвращает -1, если совпадение не найдено.
+
+match() - получить все совпадения с регулярным выражением
+
+replace() - поиск и замена
+
+split() - делит строку на массив, разбивая ее по указанной подстроке
+
+test() - выполняет  поиск совпадения  регулярного выражения со строкой. Возвращает true или False
+
+*/
+
+// let regexp = new RegExp("шаблон");
+// let regexp1 = /шаблон/;
+// let regexp2 = /шаблон/gmi;
+
+// let str = "Я ищу совпадение в 2025 году. Ёжик 1234 56789";
+// // let exp = /ищу/g;
+
+// document.writeln(str + "<br>");
+// document.writeln(str.search(exp) + "<br>");
+// document.writeln(str.match(exp) + "<br>");
+// document.writeln(exp.test(str) + "<br>");
+
+//[...] - искать один из заданных символов, но только один раз
+// let exp = /[0256]/g;
+// document.writeln(str.match(exp) + "<br>");
+
+/*Флаги
+g (global) - глобальный поиск
+i (ignoreCase) - регистронезависимый поиск
+m (multiline) - многострочный поиск
+*/
+
+/* Диапазоны
+[0-9] - одна любая цифра ([3-7])
+[A-Z] - заглавные буквы
+[a-z] - строчные буквы
+[A-Za-z]
+[А-Я] - заглавные буквы
+[а-я] - строчные буквы
+[А-я]
+ */
+
+// let exp = /[А-яЁё]/g;
+// document.writeln(str.match(exp) + "<br>");
+
+// [^abc] - исключающий диапазон, ни один из указанных символов
+
+// let exp = /[^0-9]/g;
+// document.writeln(str.match(exp) + "<br>");
+
+/*
+{3} - кол-во символов идущих подряд
+{1,} - от 1 до любого колва повторений
+{2,5} - от 2 до 5 посторений
+
+*/
+
+// let exp = /[0-9]{2,3}/g;
+// document.writeln(str.match(exp) + "<br>");
+
+// let html = `
+//     <table>
+//         <tr>
+//             <td bgcolor="#CCC">
+//                 <img src="222.png">
+//             <td/>
+//             <td bgcolor="#003399">
+//                 <img src="1f3.png">
+//             <td/>
+//             <td bgcolor="#00ccdd">
+//                 <img src="FFF.png">
+//             <td/>
+//         <tr/>
+//     <table/>
+// `;
+
+// let reg = /#([0-9a-f]{3}){1,2}/gi;
+// document.writeln(html.match(reg) + "<br>");
+
+/*
+\d (digit) - любая цифра
+\s (space) - пробельный символ, включая табуляцию  и перевод строки
+\w (word) - любая цифра, буква (только англ алфавит, регистронезависимый) или символ подчеркивания
+*/
+
+/*
+\D - все кроме цифр
+\S - не пробельный символ, включая табуляцию  и перевод строки
+\W - все кроме цифр, букв (только англ алфавит, регистронезависимый) или символа подчеркивания
+*/
+
+/*
+^ - начало строки (перед последовательностью ничего не должно быть)
+$ - конец строки (после последовательностью ничего не должно быть)
+*/
+
+// точка - один любой символ
+
+// let str = "909";
+// let exp = /^\d{3}$/;
+// document.writeln(str.match(exp) + "<br>");
+
+// let str = "Я ищу совпадение в 2025 году. Ёжик 1234 56789";
+// // let exp = /\d.\d/g;
+// document.writeln(str.match(exp) + "<br>");
+
+/*
++ - от 1 до любого кол-ва повторений {1,}
+* - от 0 до любого кол-ва повторений {0,}
+? - от 0 до 1 повторениz {0,1}
+*/
+
+// let exp = /\d+/g;
+
+// let html = `
+//     <p>Text
+//         <img src="222.jpg">
+//         <img src="dsfgsdfb222.png">
+//         <span>else. New Text</span>
+//         <img src="RRR.jpeg">
+//         <img src="uio.gif">
+//     </p>
+// `;
+
+// let exp = /(\w+)\.(gif|jpg|jpeg|png|bmp)/g;
+// document.writeln(html.match(exp) + "<br>");
+
+// document.writeln("aaa".replace('a', 'b') + "<br>");
+// document.writeln("aaa".replace(/a/g, 'b') + "<br>");
+
+// let text = "I kill you black dog";
+// document.writeln(text + "<br>");
+
+// let exp = /(book|kill|black)/ig;
+// text = text.replace(exp, "***");
+// document.writeln("<p>" + text + "</p>");
+
+// let text = "John Smith";
+// // let exp = /(John) Smith/;
+// // document.writeln(text.match(exp) + "<br>");
+
+// let exp = /(\w+)\s(\w+)/;
+// document.writeln(text.replace(exp, "$2 && $1") + "<br>");
+
+// let text = "red color: #F00 and green: #090";
+// document.writeln(text + "<br>");
+// let exp = /(#[a-f0-9]{3})/ig;
+// text = text.replace(exp, "<span style='color:$1'>$1</span>");
+// document.writeln("<p>" + text + "</p>");
+
+// let text = "I like yandex.ru";
+// document.writeln(text + "<br>");
+// let exp = /(([a-z0-9-]{2,}\.)+[a-z]{2,4})/i;
+// text = text.replace(exp, "<a href='https://$1'>$1</a>");
+// document.writeln("<p>" + text + "</p>");
+
+// //dz
+
+// let but = document.querySelector('input[type="button');
+// but.addEventListener("click", smsUser);
+
+
+// function smsUser(){
+//     let sms = document.querySelector("textarea").value;
+//     let name = document.querySelector("input[type='text'").value;
+//     let regExpBBMail = /([\w.]+@[\w.]+\.[a-z]{2,3})/ig;
+//     sms = sms.replace(regExpBBMail, "<span style='color: red'>$1</span>")
+//     // document.writeln(`
+//     //     <fieldset>
+//     //         <legend>${name}</legend>
+//     //         <div>${sms}</div>
+//     //     <fieldset>`)
+//     let form = document.querySelector("form");
+//     form.insertAdjacentHTML("beforeend", `<fieldset>
+//     //         <legend>${name}</legend>
+//     //         <div>${sms}</div>
+//     //     <fieldset>`)
+    
+// }
+
+// //dz
+
+// let str = "   текст   ";
+// str = str.replace(/^\s+|\s+$/g, "");
+// alert(">" + str + "<");
+
+// let str = "+7 (999) 123 45 78    ";
+// str = str.replace(/[\s()-]+/g, "");
+// alert(">" + str + "<");
+
+// let str = "+7 (999) 123 45 78    ";
+// let str = "01-09-2025 25.09.2025 12/03/2003";
+// let re = str.split(/[-./\s]/);
+// document.writeln(re + "<br>");
+// console.log(re);
+
+// let car  = new Object();
+// let car1 = {};
+
+// let car  = new Object();
+// car["type brand"] = "BMW";
+// car["color"] = "white";
+// document.writeln(car["type brand"] + " " + car["color"]);
+
+// let car  = new Object();
+// car.type = "BMW";
+// car.color = "white";
+// document.writeln(car.type + " " + car.color)
+
+// console.log(car);
+
+// let menu1 = {};
+// menu1.width = 300;
+// menu1.height = 200;
+// menu1.title = "Menu";
+// document.writeln(menu1.title + ": " + menu1.width + " x " + menu1.height)
+
+// console.log(menu1);
+
+// let menu = {
+//     width: 300,
+//     height: 200,
+//     title: "Menu"
+// };
+
+// // delete(menu.width);
+// delete menu.width;
+
+// document.writeln(menu.title + ": " + menu.width + " x " + menu.height)
+
+// console.log(menu);
+
+function Pupsik(pName, pAge, pJob){
+    this.name = pName;
+    this.age = pAge;
+    this.job = pJob;
+
+    this.who = function(){
+        document.writeln("Я " + "<b>" + this.name + "</b>" + " мне " + "<b>" + this.age + "</b>" + " лет. Я работаю " + "<b>" + this.job + "</b>" + "ом." + "<br>");
+    }
+}
+
+let dima = new Pupsik("Дмитрий", 26, "Дизайнер");
+let stas = new Pupsik("Станислав", 29, "Программист");
+let serg = new Pupsik("Сергей", 35, "Менеджер");
+
+dima.who();
+stas.who();
+serg.who();
+
