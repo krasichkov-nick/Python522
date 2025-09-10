@@ -1,22 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+
+        button {
+            padding: 10px 15px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .message-container {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        .loading,
+        .success {
+            background: #e8f5e9;
+            color: #339933;
+        }
+
+        .failore {
+            background: #ffe6e6;
+            color: #cc0000;
+        }
     </style>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- <h1>JavaScript</h1> -->
-    <p>RUB <input type="text" id="rub"></p>
-    <p>USD <input type="text" id="usd"></p>
-    <p>EURO <input type="text" id="euro"></p>
-    <!-- <div class="app">
-        <button>Click</button>
-    </div> -->
+    <form action="server.php" method="POST" name="form1">
+        <input type="text" name="name" placeholder="Имя"><br>
+        <input type="phone" name="phone" placeholder="Телефон"><br>
+        <button>Отправить</button>
+    </form>
     <script src="script.js"></script>
 </body>
+
 </html>

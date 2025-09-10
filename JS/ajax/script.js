@@ -1959,29 +1959,29 @@ $ - конец строки (после последовательностью �
 //     }
 // }
 
-let inputRub = document.querySelector("#rub");
-let inputUsd = document.querySelector("#usd");
-let inputEuro = document.querySelector("#euro");
+// let inputRub = document.querySelector("#rub");
+// let inputUsd = document.querySelector("#usd");
+// let inputEuro = document.querySelector("#euro");
 
 
-inputRub.addEventListener("input", () => {
-    let request = new XMLHttpRequest();
-    request.open("GET", "current.json");
-    request.setRequestHeader("Content-type", "application/json; charset=utf-8");
-    request.send();
+// inputRub.addEventListener("input", () => {
+//     let request = new XMLHttpRequest();
+//     request.open("GET", "current.json");
+//     request.setRequestHeader("Content-type", "application/json; charset=utf-8");
+//     request.send();
 
-    request.addEventListener("load", () => {
-        if(request.status == 200){
-            console.log(request.response);
-            let data = JSON.parse(request.response);
-            console.log(data);
-            inputUsd.value = (inputRub.value / data.current.usd).toFixed(2);
-            inputEuro.value = (inputRub.value / data.current.euro).toFixed(2);
+//     request.addEventListener("load", () => {
+//         if(request.status == 200){
+//             console.log(request.response);
+//             let data = JSON.parse(request.response);
+//             console.log(data);
+//             inputUsd.value = (inputRub.value / data.current.usd).toFixed(2);
+//             inputEuro.value = (inputRub.value / data.current.euro).toFixed(2);
 
-        } else {
-            inputUsd.value = "Что-то пошло не так";
-        }
-    })
+//         } else {
+//             inputUsd.value = "Что-то пошло не так";
+//         }
+//     })
 
     // request.addEventListener("readystatechange", () => {
     //     if((request.readyState == 4) && (request.status == 200)){
@@ -1993,7 +1993,7 @@ inputRub.addEventListener("input", () => {
     //         inputUsd.value = "Что-то пошлот не так";
     //     }
     // })
-})
+// })
 
 // document.querySelector("button").addEventListener("click", req);
 
@@ -2032,3 +2032,46 @@ inputRub.addEventListener("input", () => {
 //     })
 //     this.remove();
 // }
+
+let form = document.form1;
+
+let message = {
+    a: "Подтвердите загрузку, нажав 'Закрыть'",
+    b: "Можно идти спать :)",
+    loading: "Загрузка...",
+    success: "Операция прошла в штатном режиме...",
+    failore: "Что-то пошло не так..."
+};
+
+form.addEventListener("submit", event => {
+    event.preventDefault();
+
+    alert(message.a);
+    let msg = document.createElement("div");
+    msg.classList.add('message-container');
+    msg.classList.add('loading');
+    msg.textContent = message.loading;
+    form.append(msg);
+
+    let request = new XMLHttpRequest();
+    request.open("POST", "server.php");
+
+    let formData = new FormData(form);
+    request.send(formData);
+
+    request.addEventListener("load", function(){
+        if(request.status == 200){
+            console.log(request.response);
+            setTimeout(() => {
+                msg.textContent = message.success;
+            }, 2000);           
+            
+        } else {
+            msg.textContent = message.failore;
+        }
+        form.reset();
+        setTimeout(()=>msg.remove(), 3000);
+        setTimeout(()=>alert(message.b), 4000);
+    })
+    
+})
