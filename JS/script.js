@@ -1165,7 +1165,7 @@ console.log(select_tag); */
 //     id.style.fontWeight = "bold";
 //     id.style.height = "40px";
 //     id.style.textAlign = "center"
-    
+
 // }
 
 // setInterval(функция, интервал)
@@ -1183,9 +1183,9 @@ console.log(select_tag); */
 //         // run = false;
 //     }
 //     run = !run;
-    
+
 //     // console.log(act);
-    
+
 // }
 
 // // setInterval(setColor, 1000);
@@ -1213,7 +1213,7 @@ console.log(select_tag); */
 
 //     let times = hour + ":" + min + ":" + sec;
 //     document.querySelector("#text").innerHTML = times;
-    
+
 // }
 
 // let imgTime = ['c0.gif','c1.gif','c2.gif','c3.gif','c4.gif','c5.gif','c6.gif','c7.gif','c8.gif', 'c9.gif'];
@@ -1299,9 +1299,9 @@ console.log(select_tag); */
 //             elem.style.top = pos + "px";
 //             elem.style.left = pos + "px";
 //         }
-        
+
 //     }
-    
+
 
 // }
 
@@ -1538,7 +1538,7 @@ console.log(select_tag); */
 // function content(){
 //     // alert(txt.value);
 //     console.log(txt.value);
-    
+
 // }
 
 // let input = document.querySelectorAll("input");
@@ -1571,7 +1571,7 @@ console.log(select_tag); */
 //         }
 //     }
 //     console.log(num);
-    
+
 // }
 
 // let input = document.querySelectorAll("input[type='checkbox']");
@@ -1604,7 +1604,7 @@ console.log(select_tag); */
 //         }
 //     }
 //     console.log(num);
-    
+
 // }
 
 // DZ
@@ -1833,27 +1833,27 @@ $ - конец строки (после последовательностью �
 
 //dz
 
-let but = document.querySelector('input[type="button');
-but.addEventListener("click", smsUser);
+// let but = document.querySelector('input[type="button');
+// but.addEventListener("click", smsUser);
 
 
-function smsUser(){
-    let sms = document.querySelector("textarea").value;
-    let name = document.querySelector("input[type='text'").value;
-    let regExpBBMail = /([\w.]+@[\w.]+\.[a-z]{2,3})/ig;
-    sms = sms.replace(regExpBBMail, "<span style='color: red'>$1</span>")
-    // document.writeln(`
-    //     <fieldset>
-    //         <legend>${name}</legend>
-    //         <div>${sms}</div>
-    //     <fieldset>`)
-    let form = document.querySelector("form");
-    form.insertAdjacentHTML("beforeend", `<fieldset>
-    //         <legend>${name}</legend>
-    //         <div>${sms}</div>
-    //     <fieldset>`)
-    
-}
+// function smsUser(){
+//     let sms = document.querySelector("textarea").value;
+//     let name = document.querySelector("input[type='text'").value;
+//     let regExpBBMail = /([\w.]+@[\w.]+\.[a-z]{2,3})/ig;
+//     sms = sms.replace(regExpBBMail, "<span style='color: red'>$1</span>")
+//     // document.writeln(`
+//     //     <fieldset>
+//     //         <legend>${name}</legend>
+//     //         <div>${sms}</div>
+//     //     <fieldset>`)
+//     let form = document.querySelector("form");
+//     form.insertAdjacentHTML("beforeend", `<fieldset>
+//     //         <legend>${name}</legend>
+//     //         <div>${sms}</div>
+//     //     <fieldset>`)
+
+// }
 
 //dz
 
@@ -1925,3 +1925,581 @@ function smsUser(){
 // stas.who();
 // serg.who();
 
+
+// let info = '{"first_name":"Ivan","age":36,"mother":{"name":"Olga"},"children":["Kate","Igor","Misha"],"married":true,"dog":null}';
+// console.log(info);
+
+// let person = JSON.parse(info);
+// console.log(person);
+
+// person.first_name = "Petr";
+
+// delete(person.age);
+
+// person.work = "programmer";
+
+// // delete(person.children[1]);
+// person.children.splice(1,1);
+// person.children.push("Ira");
+
+// for(let i in person){
+//     document.writeln(i + ": " + person[i] + "<br>");
+// }
+
+// let  personString = JSON.stringify(person);
+// console.log(personString);
+
+// let request = new XMLHttpRequest();
+// request.open("GET", "data.txt"); // (method, url, async, login, password)
+
+// request.send();
+// request.onreadystatechange = function(){
+//     if((request.readyState == 4) && (request.status == 200)){
+//         document.writeln(request.response);
+//     }
+// }
+
+// let a = "global";
+// function outer(){
+//     let b = "outer";
+//     function inner(){
+//         let c = "inner";
+//         console.log("c", c);
+//         console.log("b", b);
+//         console.log("a", a);
+
+//     }
+//     inner();
+// }
+
+// outer();
+
+// function createCalc(n){
+//     return function(){
+//         console.log(10 * n);
+
+//     }
+// }
+
+// let calc = createCalc(34);
+// console.log(calc);
+// calc();
+
+// function increment(n){
+//     return function(num){
+//         return n + num;
+//     }
+// }
+
+// let one = increment(1);
+// console.log(one(10));
+// console.log(one(32));
+
+// let ten = increment(10);
+// console.log(ten(10));
+// console.log(ten(32));
+
+// function urlGenerator(domain){
+//     return function(url){
+//         return `https://${url}.${domain}`;
+//     }
+// }
+
+// let ruUrl = urlGenerator("ru");
+// console.log(ruUrl("yandex"));
+// console.log(ruUrl("mail"));
+
+// let comUrl = urlGenerator("com");
+// console.log(comUrl("google"));
+// console.log(comUrl("youtube"));
+
+// let person = {
+//     age: 24,
+//     name: "Irina",
+//     job: "programmer",
+//     displayInfo: function(ms){
+//         let self = this;
+
+//         setTimeout(function(){
+//             console.log("inner: ", self);
+
+//             console.log("name:", self.name);
+//             console.log("age:", self.age);
+//             console.log("job:", self.job); 
+//         }, ms);   
+//     }
+// }
+
+// person.displayInfo(2000);
+
+
+// let person = {
+//     age: 24,
+//     name: "Irina",
+//     job: "programmer",
+//     displayInfo: function(ms){
+
+
+//         setTimeout(function(){
+//             console.log("inner: ", this);
+//             console.log("name:", this.name);
+//             console.log("age:", this.age);
+//             console.log("job:", this.job); 
+//         }.bind(this), ms);   
+//     }
+// }
+
+// person.displayInfo(2000);
+
+// let person = {
+//     age: 24,
+//     name: "Irina",
+//     job: "programmer",
+//     displayInfo: function(ms){
+
+
+//         setTimeout(() => {
+//             console.log("inner: ", this);
+//             console.log("name:", this.name);
+//             console.log("age:", this.age);
+//             console.log("job:", this.job); 
+//         }, ms);   
+//     }
+// }
+
+// person.displayInfo(2000);
+
+// function first(){
+//     setTimeout(function(){
+//         console.log("первый");
+
+//         setTimeout(function(){
+//             console.log("второй");
+//         }, 100)
+//     }, 1000);
+
+
+// }
+
+// // function second(){
+
+
+// // }
+
+// first();
+// // second();
+
+//Click -> Server -> Database -> Server -> Client
+
+// console.log("Клиент: хочу получить список пользователей");
+// console.log("...");
+// setTimeout(function(){
+//     console.log("Сервер: запрашиваю список пользователей в БД");
+//     console.log("...");
+//     setTimeout(function(){
+//         console.log("База данных: формирую список пользователей");
+//         console.log("...");
+//         setTimeout(function(){
+//             console.log("Сервер: трансформирую данные для клиента");
+//             console.log("...");
+//             setTimeout(function(){
+//                 console.log("Клиент: получил данные и отображаю их");
+
+//             }, 1000)  
+//         }, 500)
+//     }, 500)   
+// }, 1000)
+
+
+// Деструктуризация
+// let user = {
+//     login: {
+//         firstName: "Kate",
+//         lastName: "Pavlova"
+//     },
+//     password: "qwerty",
+//     role: "guest"
+// }
+
+// let {login: {firstName: f, lastName: l}, password, role} = user;
+// let {login: {firstName: f, lastName: l}, ...rest} = user;
+// let {role} = user;
+// document.writeln(f + " " + l +" " + rest.password +" " + rest.role + "<br>");
+// rest.password = "123";
+
+// document.writeln(f + " " + l +" " + user.password +" " + user.role);
+// document.writeln(role);
+
+// let number = [3,5,6];
+// // let [a, b, c] = number;
+// // document.writeln(a + " " + b + " " + c);
+// let [, , c] = number
+// document.writeln(c);
+
+// let pers = {
+//     name: "Igor",
+//     colors: [
+//         "red",
+//         "white",
+//         "blue",
+//         "black"
+//     ],
+//     brand: "Bentley",
+//     start(){
+//         let {name, colors, brand} = this;
+//         let color = Math.floor(Math.random() * 4);
+//         document.writeln(name + " выиграл " + colors[color] + " " + brand);
+//     }
+// }
+
+// pers.start();
+
+// let form = document.form1;
+// form.addEventListener("submit", event => {
+//     event.preventDefault(); // отменяет действие тега, которое он совершает по умолчанию
+//     let title = form.title.value;
+//     let text = form.text.value;
+//     let description = form.description.value;
+
+//     // console.log(title, text);
+//     // saveForm({title: title, text: text});
+//     saveForm({title, text, description});
+// });
+
+// function saveForm(obj){
+//     let formData = {
+//         date: new Date().toLocaleDateString(),
+//         ...obj
+//     }
+//     console.log("FormData:", formData);
+    
+// }
+
+// function saveForm({title, text, description}){
+//     let formData = {
+//         date: new Date().toLocaleDateString(),
+//         title, text, description
+//     }
+//     console.log("FormData:", formData);
+    
+// }
+
+// function saveForm(obj){
+//     let {title, text, description} = obj;
+//     let formData = {
+//         date: new Date().toLocaleDateString(),
+//         title, text, description
+//     }
+//     console.log("FormData:", formData);
+    
+// }
+
+// class User{
+
+//     constructor(name){
+//         this.name = name;
+//     }
+
+//     sayHi(){
+//         document.writeln("Hello, " + this.name + "!");
+//     }
+// }
+
+// let user = new User("Igor");
+// user.sayHi();
+
+// console.log(typeof User);
+// console.log(typeof user);
+
+// class User{
+
+//     constructor(login){
+//         this.login = login;
+//     }
+
+//     get login(){
+//         return this._login;
+//     }
+
+//     set login(value){
+//         if(value.length < 6){
+//             alert("Логин слишком короткий");
+//             return;
+//         }
+//         this._login = value;
+//     }
+// }
+
+// let user = new User("administrator");
+// alert(user.login);
+// user.login = "admin_admin";
+// alert(user.login);
+// user.login = "admin";
+// alert(user.login);
+
+// class Person{
+//     constructor(firstName, lastName){
+//         this._firstName = firstName;
+//         this._lastName = lastName;
+//     }
+
+//     get fullName(){
+//         return this._firstName + " " + this._lastName
+//     }
+
+//     set fullName(value){
+//         [this._firstName, this._lastName] = value.split(/\s+/g);
+//     }
+// }
+
+// let people = new Person("John", "Dou");
+// document.writeln(people.fullName + "<br>");
+// people.fullName = "Anna Petrova";
+// document.writeln(people.fullName + "<br>")
+
+// class Animal{
+//     static count = 0;
+
+//     constructor(name){
+//         this.speed = 0;
+//         this.name = name;
+//         Animal.count++;
+//     }
+
+//     static counter(){
+//         return Animal.count;
+//     }
+
+//     run(speed){
+//         this.speed = speed;
+//         document.writeln(`${this.name} бежит со скоростью ${this.speed} км/ч.<br>`);
+//     }
+
+//     stop(){
+//         this.speed = 0;
+//         document.writeln(`${this.name} стоит.<br>`);
+//     }
+// }
+
+// class Rabbit extends Animal{
+
+//     constructor(name, earlLength){
+//         super(name);
+//         this.earlLength = earlLength;
+//     }
+
+//     hide(){
+//         document.writeln(`${this.name} прячется!<br>`)
+//     }
+
+//     stop(){
+//         super.stop();
+//         this.hide();
+//     }
+// }
+
+// let animal = new Animal("Мой питомец");
+// animal.run(80);
+// animal.stop();
+
+// document.writeln("<br>");
+
+// let rabbit = new Rabbit("Белый кролик", 10);
+// rabbit.run(5);
+// rabbit.hide();
+// rabbit.stop();
+// document.writeln(rabbit.name + "<br>");
+// document.writeln(rabbit.earlLength + "<br>");
+
+// let animal2 = new Animal("Мой питомец 2");
+// let animal3 = new Animal("Мой питомец 3");
+// let animal4 = new Animal("Мой питомец 4");
+
+// document.writeln(Animal.counter());
+
+// class Header{
+//     constructor(img, h1, h2){
+//         this.src = img;
+//         this.h1 = h1;
+//         this.h2 = h2;
+//         this.out = "";
+//     }
+
+//     render(id){
+//         this.out = `
+//             <img src="${this.src}" alt="">
+//             <h1>${this.h1}</h1>
+//             <h2>${this.h2}</h2>
+//         `;
+
+//         document.querySelector(`#${id}`).innerHTML = this.out;
+//     }
+// }
+
+// class HeaderExt extends Header{
+//     constructor(img, h1, h2, tel){
+//         super(img, h1, h2);
+//         this.tel = tel;
+//     }
+
+//     render(id){
+//         super.render(id);
+//         this.out += `
+//         <h3>${this.tel}</h3>
+//         `;
+
+//         document.querySelector(`#${id}`).innerHTML = this.out;
+//     }
+// }
+
+// let img = "https://img.icons8.com/?size=100&id=39853&format=png";
+
+// let header = new Header(img, "Заголовок", "Описание");
+// header.render("header");
+
+// let img2 = "https://img.icons8.com/?size=128&id=Nkym0Ujb8VGI&format=png";
+
+// let header2 = new Header(img2, "Заголовок2", "Описание2");
+// header2.render("header2");
+
+// let img3 = "https://img.icons8.com/?size=128&id=gYCTehfTlYk5&format=png"
+
+// let header3 = new HeaderExt(img3, "Заголовок 3", "Описание 3", "+79876930557");
+
+// header3.render("header-ext");
+
+
+//дз классы
+
+class Header{
+    constructor(img, h1, h2){
+        this.src = img;
+        this.h1 = h1;
+        
+        this.out = "";
+    }
+
+    render(id){
+        this.out = `
+            <img src="${this.src}" alt="">
+            <h1>${this.h1}</h1>
+            
+        `;
+
+        document.querySelector(`#${id}`).innerHTML = this.out;
+    }
+}
+
+let img = "https://cdn-icons-png.flaticon.com/128/5091/5091600.png";
+
+let header = new Header(img, "Робот малыш");
+header.render("header");
+
+let img2 = "https://cdn-icons-png.flaticon.com/128/12133/12133562.png";
+
+let header2 = new Header(img2, "Наш путешественник");
+header2.render("header2");
+
+let img3 = "https://cdn-icons-png.flaticon.com/128/10450/10450970.png";
+
+let header3 = new Header(img3, "меломан");
+header3.render("header3");
+
+let img4 = "https://cdn-icons-png.flaticon.com/128/6585/6585152.png";
+
+let header4 = new Header(img4, "Друг");
+header4.render("header4");
+
+let img5 = "https://cdn-icons-png.flaticon.com/128/9151/9151271.png";
+
+let header5 = new Header(img5, "Луноход");
+header5.render("header5");
+
+let img6 = "https://cdn-icons-png.flaticon.com/128/8598/8598895.png";
+
+let header6 = new Header(img6, "Кот");
+header6.render("header6");
+
+let img7 = "https://cdn-icons-png.flaticon.com/128/4712/4712242.png";
+
+let header7 = new Header(img7, "Не пойми что");
+header7.render("header7");
+
+let img8 = "https://cdn-icons-png.flaticon.com/128/4616/4616790.png";
+
+let header8 = new Header(img8, "Орбита");
+header8.render("header8");
+
+let img9 = "https://cdn-icons-png.flaticon.com/128/9936/9936257.png";
+
+let header9 = new Header(img9, "Учитель");
+header9.render("header9");
+
+
+
+
+
+// console.log("Клиент: хочу получить список пользователей");
+// console.log("...");
+
+// let promise = new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//         console.log("Сервер: запрашиваю список пользователей в БД");
+//         console.log("...");
+//         resolve();
+//     }, 1000)
+// });
+// // promise.then(function(){
+// //     setTimeout(function(){
+// //         console.log("База данных: формирую список пользователей");
+// //         console.log("...");
+// //     }, 500);
+// // })
+
+// promise.then(function () {
+//     return new Promise(function (resolve, reject) {
+//         setTimeout(function () {
+//             let users = [
+//                 {uid: "id1", name: "Igor"},
+//                 {uid: "id2", name: "Irina"},
+//             ]
+//             // reject("База данных не смогла получить список пользователей")
+//             console.log("База данных: формирую список пользователей", users);
+//             console.log("...");
+//             resolve(users);
+//         }, 500);
+//     })
+// })
+// .then(function(dbUsers){
+//     return new Promise(function(resolve, reject){
+//         setTimeout(function(){
+//             console.log("Сервер: трансформирую данные для клиента");
+//             console.log("...");
+//             let users = dbUsers.map(function(user){
+//                 return{
+//                     id: user.uid,
+//                     firstName: user.name,
+//                     timestamp: Date.now()
+//                 }
+//             })
+//             resolve(users);
+//         }, 500);
+//     })
+// })
+// .then(function(users){
+//     return new Promise(function(resolve, reject){
+//         setTimeout(function(){
+//             console.log("Клиент: получил данные и отображаю их", users);
+//             console.log("...");
+//             resolve();
+//         }, 1000);
+//     })
+// })
+// .catch(function(error){
+//     console.log(error);
+    
+// })
+// .finally(function(){
+//     console.log("Finally");
+    
+// });
