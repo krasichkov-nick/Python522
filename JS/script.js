@@ -2172,7 +2172,7 @@ $ - конец строки (после последовательностью �
 //         ...obj
 //     }
 //     console.log("FormData:", formData);
-    
+
 // }
 
 // function saveForm({title, text, description}){
@@ -2181,7 +2181,7 @@ $ - конец строки (после последовательностью �
 //         title, text, description
 //     }
 //     console.log("FormData:", formData);
-    
+
 // }
 
 // function saveForm(obj){
@@ -2191,7 +2191,7 @@ $ - конец строки (после последовательностью �
 //         title, text, description
 //     }
 //     console.log("FormData:", formData);
-    
+
 // }
 
 // class User{
@@ -2371,69 +2371,69 @@ $ - конец строки (после последовательностью �
 
 //дз классы
 
-class Header{
-    constructor(img, h1, h2){
-        this.src = img;
-        this.h1 = h1;
-        
-        this.out = "";
-    }
+// class Header{
+//     constructor(img, h1, h2){
+//         this.src = img;
+//         this.h1 = h1;
 
-    render(id){
-        this.out = `
-            <img src="${this.src}" alt="">
-            <h1>${this.h1}</h1>
-            
-        `;
+//         this.out = "";
+//     }
 
-        document.querySelector(`#${id}`).innerHTML = this.out;
-    }
-}
+//     render(id){
+//         this.out = `
+//             <img src="${this.src}" alt="">
+//             <h1>${this.h1}</h1>
 
-let img = "https://cdn-icons-png.flaticon.com/128/5091/5091600.png";
+//         `;
 
-let header = new Header(img, "Робот малыш");
-header.render("header");
+//         document.querySelector(`#${id}`).innerHTML = this.out;
+//     }
+// }
 
-let img2 = "https://cdn-icons-png.flaticon.com/128/12133/12133562.png";
+// let img = "https://cdn-icons-png.flaticon.com/128/5091/5091600.png";
 
-let header2 = new Header(img2, "Наш путешественник");
-header2.render("header2");
+// let header = new Header(img, "Робот малыш");
+// header.render("header");
 
-let img3 = "https://cdn-icons-png.flaticon.com/128/10450/10450970.png";
+// let img2 = "https://cdn-icons-png.flaticon.com/128/12133/12133562.png";
 
-let header3 = new Header(img3, "меломан");
-header3.render("header3");
+// let header2 = new Header(img2, "Наш путешественник");
+// header2.render("header2");
 
-let img4 = "https://cdn-icons-png.flaticon.com/128/6585/6585152.png";
+// let img3 = "https://cdn-icons-png.flaticon.com/128/10450/10450970.png";
 
-let header4 = new Header(img4, "Друг");
-header4.render("header4");
+// let header3 = new Header(img3, "меломан");
+// header3.render("header3");
 
-let img5 = "https://cdn-icons-png.flaticon.com/128/9151/9151271.png";
+// let img4 = "https://cdn-icons-png.flaticon.com/128/6585/6585152.png";
 
-let header5 = new Header(img5, "Луноход");
-header5.render("header5");
+// let header4 = new Header(img4, "Друг");
+// header4.render("header4");
 
-let img6 = "https://cdn-icons-png.flaticon.com/128/8598/8598895.png";
+// let img5 = "https://cdn-icons-png.flaticon.com/128/9151/9151271.png";
 
-let header6 = new Header(img6, "Кот");
-header6.render("header6");
+// let header5 = new Header(img5, "Луноход");
+// header5.render("header5");
 
-let img7 = "https://cdn-icons-png.flaticon.com/128/4712/4712242.png";
+// let img6 = "https://cdn-icons-png.flaticon.com/128/8598/8598895.png";
 
-let header7 = new Header(img7, "Не пойми что");
-header7.render("header7");
+// let header6 = new Header(img6, "Кот");
+// header6.render("header6");
 
-let img8 = "https://cdn-icons-png.flaticon.com/128/4616/4616790.png";
+// let img7 = "https://cdn-icons-png.flaticon.com/128/4712/4712242.png";
 
-let header8 = new Header(img8, "Орбита");
-header8.render("header8");
+// let header7 = new Header(img7, "Не пойми что");
+// header7.render("header7");
 
-let img9 = "https://cdn-icons-png.flaticon.com/128/9936/9936257.png";
+// let img8 = "https://cdn-icons-png.flaticon.com/128/4616/4616790.png";
 
-let header9 = new Header(img9, "Учитель");
-header9.render("header9");
+// let header8 = new Header(img8, "Орбита");
+// header8.render("header8");
+
+// let img9 = "https://cdn-icons-png.flaticon.com/128/9936/9936257.png";
+
+// let header9 = new Header(img9, "Учитель");
+// header9.render("header9");
 
 
 
@@ -2497,9 +2497,91 @@ header9.render("header9");
 // })
 // .catch(function(error){
 //     console.log(error);
-    
+
 // })
 // .finally(function(){
 //     console.log("Finally");
-    
+
 // });
+
+// let test = ms => {
+//     return new Promise(resolve => {
+//         setTimeout(() => resolve(), ms);
+//     })
+// }
+
+// test(1000).then(() => console.log('1000 ms'));
+// test(2000).then(() => console.log('2000 ms'));
+
+// Promise.all([test(1000), test(2000)]).then(() => {
+//     console.log("all");
+
+// });
+
+// Promise.race([test(1000), test(2000)]).then(() => {
+//     console.log("race");
+
+// });
+
+// let test = ms => {
+//     return new Promise(resolve => {
+//         setTimeout(() => resolve(), ms);
+//     })
+// }
+
+// let p1 = test(1000).then(() => ({name: '1000 ms'}));
+// let p2 = test(2000).then(() => ({name: '2000 ms'}));
+
+// Promise.all([p1, p2]).then((data) => {
+//     console.log("all", data);
+
+// });
+
+// Promise.race([p1, p2]).then((data) => {
+//     console.log("race", data);
+
+// });
+
+// fetch('https://jsonplaceholder.typicode.com/todos')
+//       .then(response => response.json())
+//       .then(json => console.log(json))
+
+// document.querySelector("#load").addEventListener("click", loadUsers);
+
+// function loadUsers(){
+//     let url = "https://jsonplaceholder.typicode.com/users";
+//     fetch(url)
+//         .then(function(response){
+//             return response.json()
+//         })
+//         .then(function(data){
+//             let ul = document.querySelector("#list");
+//             let html = data.map(function(item){
+//                 return "<li>" + item.id + " " + item.name + " " + item.email +  "</li>";
+//             })
+//             ul.insertAdjacentHTML("afterbegin", html.join(" "));
+//         });
+// }
+
+document.querySelector("#load").addEventListener("click", loadUsers);
+
+async function loadUsers() {
+    let url = "https://jsonplaceholder.typicode.com/todos";
+    let response = await fetch(url);
+    let data = await response.json();
+    
+    let completed = data.filter(item => item.completed === true);
+
+    let ul = document.querySelector("#list");
+    let html = completed.map(function (item) {
+        return "<li>" + item.userId + " " + item.id + " " + item.title + "</li>";
+    })
+    ul.insertAdjacentHTML("afterbegin", html.join(" "));
+}
+
+// alert("Hello");
+
+// let box = document.querySelector("#box");
+// console.log(box.getBoundingClientRect());
+
+
