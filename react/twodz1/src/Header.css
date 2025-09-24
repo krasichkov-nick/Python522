@@ -1,0 +1,40 @@
+/* Стили для компонента Header */
+/* .App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+} */
+
+/* Стили для логотипа */
+.logo {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Общие стили для всех изображений-альбомов */
+.albom {
+    width: 150px; /* Задаем фиксированную ширину */
+    height: 150px; /* Задаем фиксированную высоту */
+    object-fit: cover; /* Обрезаем изображение, сохраняя пропорции */
+    border-radius: 8px; /* Добавляем скругленные углы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавляем тень для эффекта */
+    margin: 5px; /* Создаем отступы между изображениями */
+    transition: transform 0.3s ease; /* Добавляем анимацию при наведении */
+}
+
+/* Эффект при наведении на изображение */
+.albom:hover {
+    transform: scale(1.5); /* Немного увеличиваем изображение */
+}
+
+/* Стили для контейнера с изображениями */
+.App-header p {
+    display: flex;
+    gap: 10px; /* Создаем пространство между изображениями */
+    justify-content: center;
+}
