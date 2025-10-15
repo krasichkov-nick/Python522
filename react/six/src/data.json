@@ -1,0 +1,203 @@
+{
+    "categories": [
+        {
+            "name": "Все"
+        },
+        {
+            "name": "Природа"
+        },
+        {
+            "name": "Архитектура"
+        },
+        {
+            "name": "Вода"
+        },
+        {
+            "name": "Фауна"
+        }
+    ],
+    "collections": [
+        {
+            "category": 1,
+            "name": "Отдых на природе",
+            "photos": [
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=01a97a75ef6d7339893c9a4d94de88a19738adc0-5232515-images-thumbs&n=13",
+                    "thumbnail":"https://i.pinimg.com/originals/a5/7d/c4/a57dc439039c23f59234a7b95acc94ac.jpg"
+                },
+                {
+                    "original":"https://i.pinimg.com/originals/2e/6f/58/2e6f584594c4b23785354911774e8f52.jpg",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=076c5099877a9ecb671681037faa4585ceeef402-5252220-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=8e19e4cc82c1a1e906ebf47fe9d5fcc0_l-10330559-images-thumbs&n=13",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=96f89c6e52c957c1238a25eb64d4720a12ed8a4a-16307396-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://i.pinimg.com/originals/63/8e/4c/638e4c86ed11e7c094389be718bf6dbf.jpg?nii=t",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=f2e2807058bc0eebcbdabc9a7a7cb314f12b62a7-10085718-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://play-lh.googleusercontent.com/H2dOHOSiRKLtDg_IRdYdCAd6Gaj3hHWSR3CC8Q7URt4LEd-2_L3BbTTUxauDlJsORHc=w7680-h4320",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=bf705b124ce76086f64d87cf963322d156c82e6b-8184763-images-thumbs&n=13"
+                }
+            ]
+        },
+        {
+            "category": 2,
+            "name": "Архитектура",
+            "photos": [
+                {
+                    "original":"https://i.archi.ru/i/290024.jpg",
+                    "thumbnail":"https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3DR4EW4zCayOefh-zZ4SBfx_D4gd289CxKfyLJmhF1JL1cEq1Vtl1wjLiIJv6taFGfIQ2sDDs3x0e632aQ59ma1NbDACEkGwd8Ao9xgqot1VouskdcfiB5jDgnDEAf5eiskcXoCXhAZpKg2HdjMD5PRebKJQu5utSKclwg22rLGdYZFs47cAOJOENHeUlkr9dTrrIAFXCjNcrj6EtMGz6o4JaC5Qv6h-Xa7pDy4DR2ioyjC-9Nv7vWCnkYr51qxp4XFtWJNHHOjfFEQb0GKmvfWS38DJq-bXRIYKoMz5t46SLeBe8AsAUpFCHV8mezPUHIooogDHaw3EQxEy4Zogmc39Tfx_D-A467hkJzyGWi1FVg8gLXeSQyQeJrCgla8OjoVcXkw_yD5xbuFzrqvXWFyW6LYUd-9Z6BeVlg3OdFH9VQEYc0uQcJ8UKJOc6tIZda6fSDWHwgfYpnLoKDnffvaNHKqMi9w-6da5O6IHTwSYUmimnPt7fRgXgSqZmvyVudEZDFunsCyrDKDHIBKWKRUmB_SdTzL_NKramDDti2q-wUjinAvIMlEaRXuuKzcYIOIkRnBbc7n8m1luBRIgjfEZ9XwPoyCoa1QcI5QKqnFtHi9Q2Sv2WzR6-pwU0TvCll1w9ujn7EJVJtULmrNfUAR2qPbMzw8lqBdNrg1KEEFhsbkANzswrL-ESNeovrZxJXpLCL2X1lvYshqkSDljfhIZcPZg72x23XbhGyp_vxBgIrBmHA_Phah7yWrhVlAp4b2FQNs_iKSfIDSzVAbOCWGuR5AZm8JDOCaudNBJ09pKIby-wLc4Kim-sQuefzMEiG6AUuxjQ1HkB81GYUpQiZVhydADJzgYgzDsp3jCIg31kp_AQStWT2RiYoC0cTcSDtEMUphj2LrR2gnf3rPblFzuEKpkt7P5bM8JkrVOpBmxYYXg"
+                },
+                {
+                    "original":"https://i.pinimg.com/originals/65/74/65/657465e2e51600edc94fcfe29d8c2468.jpg",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=83bdc8db23caa77921c47ecbb82ee45691de65df-5365021-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://i.pinimg.com/originals/71/2e/1b/712e1bc8fdaa63ccafca1b03a9521d7c.jpg",
+                    "thumbnail":"https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3Wk4DXoDDa3ecKR3gNt-BfxuVvlQlpYO7LP3dJWwR1cCkLEziDI1-wDLnJZb9saBCYcAyvDbuyUNH92CCTI4zLF9GR1XXnG5x8BQ9xRe4qk5mtM4qafeL5y22wDYqf-jXkmAuuh_zHrR3g0HavcbUGByrLaIS8MN3CMBCj1WgB2ZTTXgC7_U-E8kFOuU0l5BGbpLOK3TTseocra8LNk_7upNQM6Yr-RWqeqJ4-KvKxTsLjjqlO-jbcwLAb51ouAdQTElHD_PJOSfaISb-JaqrVk64wxNG7IrTGqeiAihB-qOUWRG6A9Q_oUmZReyp1NgUJp48ogbv_18r-U-zbqskbEdqTybI2wYT1wou8R6TlHJiifcrf9uX9gKBqQYzWvyDk3M-uizZDbpxknrni-DhNzaZDKcDw95KIOxumlW-MV5LQFwfy8oaAcohPdw2iLZ_brfTMXnng-c9r7wQEXHgn41xLocc9Ai6V7xs9YjLxyAHqCyjIeD7Qxzsa7VwqxNvWmFaGsHxEhbHJx_JGbanc3aV9R5T1b_ZBqyWDBdE9ZqfYjuVGNQNuXmPU-WLwNknKYQ_mxrI-XIlz12kV4kkaUhTYQbU8DY39zEw8DSwqGVom_83QsyO8AaYng0eS9mwlUU1kAXvBKV4gHf5hubDNSChHLc17eZVMOxYlFWfKFpseXIZ2tYyNsIFJc07na9leoLmIVvjhvA9qqYDCXHPn7RUNZAn7SSoWpR6_arV-yU5tBqTAd3WfTD3eaVumDhATHp9CeHXHDTKLDrUBLOxe2u35Qdy4IP2BY-LNy9t47aiWgaCD_sxv2embvmH1dggA6cWnj3G9Ugj6HiuTp84aFFNbi3X0TAbzSgM0Q-CinpOuNMTZMym9RKeuAo2Y9qEs2YquRnOCZtZv0DMl-biBDaHMqAf88liAdpJm3ueBUxYTX0"
+                },
+                {
+                    "original":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/LotusDelhi.jpg/960px-LotusDelhi.jpg",
+                    "thumbnail":"https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3WBNTXNzFaiGcKUu9Zd6AJU6QtwckotG2eP_dcD4T1MP0dkqwXN10lzLjLJf7t6NFfIQ2sDDs3x0e632aQ59ma1NbDACEkGwd8Ao9xgqot1VouskdcfiB5jDgnDEAf5eiskcXoCXhAZpKg2HdjMD5PRebKJQu5utSKclwg22rLGdYZFs47cAOJOENHeUlkr9dTrrIAFXCjNcrj6EtMGz6o4JaC5Qv6h-Xa7pDy4DR2ioyjC-9Nv7vWCnkYr51qxp4XFtWJNHHOjfFEQb0GKmvfWS38DJq-bXRIYKoMz5t46SLeBe8AsAUpFCHV8mezPUHIooogDHaw3EQxEy4Zogmc39Tfx_D-A467hkJzyGWi1FVg8gLXeSQyQeJrCgla8OjoVcXkw_yD5xbuFzrqvXWFyW6LYUd-9Z6BeVlg3OdFH9VQEYc0uQcJ8UKJOc6tIZda6fSDWHwgfYpnLoKDnffvaNHKqMi9w-6da5O6IHTwSYUmimnPt7fRgXgSqZmvyVudEZDFunsCyrDKDHIBKWKRUmB_SdTzL_NKramDDti2q-wUjinAvIMlEaRXuuKzcYIOIkRnBbc7n8m1luBRIgjfEZ9XwPoyCoa1QcI5QKqnFtHi9Q2Sv2WzR6-pwU0TvCll1w9ujn7EJVJtULmrNfUAR2qPbMzw8lqBdNrg1KEEFhsbkANzswrL-ESNeovrZxJXpLCL2X1lvYshqkSDljfhIZcPZg72x23XbhGyp_vxBgIrBmHA_Phah7yWrhVlAp4b2FQNs_iKSfIDSzVAbOCWGuR5AZm8JDOCaudNBJ09pKIby-wLc4Kim-sQuefzMEiG6AUuxjQ1HkB81GYUpQiZVhydADJzgYgzDsp3jCIg31kp_AQStWT2RiYoC0cTcSDtEMUphj2LrR2gnf3rPblFzuEKpkt7P5bM8JkrVOpBmxYYXg"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=81d706ddd62bd44a32a655bdcd0b759d_l-4034308-images-thumbs&n=13",
+                    "thumbnail":"https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3WEkHVoiQPXPLc060YtXULRyWtVcn9YblfK-PfGoXj5L1d0zlC40hxjLuJZn2s6hHfIQ2sDDs3x0e632aQ59ma1NbDACEkGwd8Ao9xgqot1VouskdcfiB5jDgnDEAf5eiskcXoCXhAZpKg2HdjMD5PRebKJQu5utSKclwg22rLGdYZFs47cAOJOENHeUlkr9dTrrIAFXCjNcrj6EtMGz6o4JaC5Qv6h-Xa7pDy4DR2ioyjC-9Nv7vWCnkYr51qxp4XFtWJNHHOjfFEQb0GKmvfWS38DJq-bXRIYKoMz5t46SLeBe8AsAUpFCHV8mezPUHIooogDHaw3EQxEy4Zogmc39Tfx_D-A467hkJzyGWi1FVg8gLXeSQyQeJrCgla8OjoVcXkw_yD5xbuFzrqvXWFyW6LYUd-9Z6BeVlg3OdFH9VQEYc0uQcJ8UKJOc6tIZda6fSDWHwgfYpnLoKDnffvaNHKqMi9w-6da5O6IHTwSYUmimnPt7fRgXgSqZmvyVudEZDFunsCyrDKDHIBKWKRUmB_SdTzL_NKramDDti2q-wUjinAvIMlEaRXuuKzcYIOIkRnBbc7n8m1luBRIgjfEZ9XwPoyCoa1QcI5QKqnFtHi9Q2Sv2WzR6-pwU0TvCll1w9ujn7EJVJtULmrNfUAR2qPbMzw8lqBdNrg1KEEFhsbkANzswrL-ESNeovrZxJXpLCL2X1lvYshqkSDljfhIZcPZg72x23XbhGyp_vxBgIrBmHA_Phah7yWrhVlAp4b2FQNs_iKSfIDSzVAbOCWGuR5AZm8JDOCaudNBJ09pKIby-wLc4Kim-sQuefzMEiG6AUuxjQ1HkB81GYUpQiZVhydADJzgYgzDsp3jCIg31kp_AQStWT2RiYoC0cTcSDtEMUphj2LrR2gnf3rPblFzuEKpkt7P5bM8JkrVOpBmxYYXg"
+                }
+            ]
+        },
+        {
+            "category": 1,
+            "name": "Виды природы",
+            "photos": [
+                {
+                    "original":"https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3XRsCW4yQZ3Oech7hYtTQKUmQ41Yl89GxLqracD4Th8aYeVHgXox2xy_lJoKm6PAXNJ52pT_8wVIZpWmaUdcuNw8YaDH44B0d4Bk1wxypnH1Bl-IcPuSQ3BfuuzENS8a8nlMUhDvNNbFavlnpufbUCT6qOZId8dh8Le9lkW6AFl5felEg_8A-MtoRPeUcqIFZe5rTB1HZjOwEg7oBEFfytpVNGaUC7yO9S51OzK7x_REmrjOSMOPlZC3ZepVRjQpiWE5CBOPbLw_hAR3PEZCzZkCj1Q1c0JLiBZq9CDJL2pu_RiqeP_sho1ayY9yo9sAWAoIaqxDN43cO5XG2WaQxcGd6Ty_r1BQ23iUx_iWoilFdhs0rV9SJ-QO6uiIdS_WWjV0SlQDwA5dvkXPbmPPFOiOXEb4x5NhiG9d9nEqdMmF7aFIE-Pk8LfwoPcABsoxtSZfyBULCq9IfpqQgDXbFu4hdNLsW4gC8SYZC6rj35xkGni2-NMv9dznmbL1MmDhac39fAtrsExPtJCXiJ52mX3WpyQZo3q3nCqO2MxhkwZuNXhqIKfIDt1eBbMarz9wxBK8UnQLa2lUO4H6Pd4QtW1debxT11T4V4jI77C20t0ZEgMkyYN-k6CaJvBQWYdyghEIbhw3uDpFNk2XjiOPzFBuIAb4H6thDAtNapWSbI31TX1og4OgxOOUyKfU0oq5pTIDyAFjRs9Iwpp0FFmH-oqRPOZMA6iKidYN89o7HxyQroAGlJtvjRBLJeqZrixh8fV1SCf_xDhb7LDjAN4SHakmGyiV15ZXOHI-LCyVz1rSxWAShFO4PolaGRuWCyvs_CJUSuifQw0MS4WeReK8uelFyVQ3J9AUnwC0dzwGQkUZshd00RtiMwCW9mjcJSMCBiXw6uDrbH5FsonPFpvTZCjS_MIgW5fZCL8VukWujElt4c2I",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=01b27e5edcea427c0d5d2de776b322c6971a6194-4012844-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=1ef251539e7629c826d895e095b09256_l-5885436-images-thumbs&n=13",
+                    "thumbnail":"https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3XxJUCo_FOnvOfB3lY9bRJR7EtlwhrtSyfa_dcmlFg8KlIx_oW4p-kzLiLJf5taFEfIQ2sDDs3x0e632aQ59ma1NbDACEkGwd8Ao9xgqot1VouskdcfiB5jDgnDEAf5eiskcXoCXhAZpKg2HdjMD5PRebKJQu5utSKclwg22rLGdYZFs47cAOJOENHeUlkr9dTrrIAFXCjNcrj6EtMGz6o4JaC5Qv6h-Xa7pDy4DR2ioyjC-9Nv7vWCnkYr51qxp4XFtWJNHHOjfFEQb0GKmvfWS38DJq-bXRIYKoMz5t46SLeBe8AsAUpFCHV8mezPUHIooogDHaw3EQxEy4Zogmc39Tfx_D-A467hkJzyGWi1FVg8gLXeSQyQeJrCgla8OjoVcXkw_yD5xbuFzrqvXWFyW6LYUd-9Z6BeVlg3OdFH9VQEYc0uQcJ8UKJOc6tIZda6fSDWHwgfYpnLoKDnffvaNHKqMi9w-6da5O6IHTwSYUmimnPt7fRgXgSqZmvyVudEZDFunsCyrDKDHIBKWKRUmB_SdTzL_NKramDDti2q-wUjinAvIMlEaRXuuKzcYIOIkRnBbc7n8m1luBRIgjfEZ9XwPoyCoa1QcI5QKqnFtHi9Q2Sv2WzR6-pwU0TvCll1w9ujn7EJVJtULmrNfUAR2qPbMzw8lqBdNrg1KEEFhsbkANzswrL-ESNeovrZxJXpLCL2X1lvYshqkSDljfhIZcPZg72x23XbhGyp_vxBgIrBmHA_Phah7yWrhVlAp4b2FQNs_iKSfIDSzVAbOCWGuR5AZm8JDOCaudNBJ09pKIby-wLc4Kim-sQuefzMEiG6AUuxjQ1HkB81GYUpQiZVhydADJzgYgzDsp3jCIg31kp_AQStWT2RiYoC0cTcSDtEMUphj2LrR2gnf3rPblFzuEKpkt7P5bM8JkrVOpBmxYYXg"
+                },
+                {
+                    "original":"https://wallpapers.com/images/hd/nature-pictures-waacyndumm1sudwp.jpg",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=e0f764db5ce9f010b3a0057d3758fb61c764aa72-5339338-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://wallpapers.com/images/hd/mountain-scenes-mr0pdd79v5zzp4ob.jpg",
+                    "thumbnail":"https://avatars.mds.yandex.net/i?id=945bdd438642873668c103efb83bbb62a5f5461a-4570467-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://img.goodfon.ru/wallpaper/nbig/2/6c/sneg-priroda-reka-forest-nature-snow-gory-piki-moutains-lake.webp",
+                    "thumbnail":"https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3D00DWYiQZ3fLf0S8N96Ef0yXtgBxr4HnLPrYIm1Ch5L0JUyzX94jwTLhLJn5s6BFfIQ2sDDs3x0e632aQ59ma1NbDACEkGwd8Ao9xgqot1VouskdcfiB5jDgnDEAf5eiskcXoCXhAZpKg2HdjMD5PRebKJQu5utSKclwg22rLGdYZFs47cAOJOENHeUlkr9dTrrIAFXCjNcrj6EtMGz6o4JaC5Qv6h-Xa7pDy4DR2ioyjC-9Nv7vWCnkYr51qxp4XFtWJNHHOjfFEQb0GKmvfWS38DJq-bXRIYKoMz5t46SLeBe8AsAUpFCHV8mezPUHIooogDHaw3EQxEy4Zogmc39Tfx_D-A467hkJzyGWi1FVg8gLXeSQyQeJrCgla8OjoVcXkw_yD5xbuFzrqvXWFyW6LYUd-9Z6BeVlg3OdFH9VQEYc0uQcJ8UKJOc6tIZda6fSDWHwgfYpnLoKDnffvaNHKqMi9w-6da5O6IHTwSYUmimnPt7fRgXgSqZmvyVudEZDFunsCyrDKDHIBKWKRUmB_SdTzL_NKramDDti2q-wUjinAvIMlEaRXuuKzcYIOIkRnBbc7n8m1luBRIgjfEZ9XwPoyCoa1QcI5QKqnFtHi9Q2Sv2WzR6-pwU0TvCll1w9ujn7EJVJtULmrNfUAR2qPbMzw8lqBdNrg1KEEFhsbkANzswrL-ESNeovrZxJXpLCL2X1lvYshqkSDljfhIZcPZg72x23XbhGyp_vxBgIrBmHA_Phah7yWrhVlAp4b2FQNs_iKSfIDSzVAbOCWGuR5AZm8JDOCaudNBJ09pKIby-wLc4Kim-sQuefzMEiG6AUuxjQ1HkB81GYUpQiZVhydADJzgYgzDsp3jCIg31kp_AQStWT2RiYoC0cTcSDtEMUphj2LrR2gnf3rPblFzuEKpkt7P5bM8JkrVOpBmxYYXg"
+                }
+            ]
+        },
+        {
+            "category": 3,
+            "name": "Подводный мир",
+            "photos": [
+                {
+                    "original": "https://i.pinimg.com/originals/41/c4/19/41c419e19bb0c62aad149efd03a26ed0.jpg",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=a642e783ad1b41c69222fde788c357d74867e1b4-5331336-images-thumbs&n=13"
+                },
+                {
+                    "original": "https://avatars.mds.yandex.net/i?id=49294361bb6dba4ed3b39c67e066e040_l-6356719-images-thumbs&n=13",
+                    "thumbnail": "https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3DRwCCtuZanWafESyYdOEfUrE4gV0odXnfPyMdz0YhsD_I023Ctl2xTLhI5r3vKBAfIQ2sDDs3x0e632aQ59ma1NbDACEkGwd8Ao9xgqot1VouskdcfiB5jDgnDEAf5eiskcXoCXhAZpKg2HdjMD5PRebKJQu5utSKclwg22rLGdYZFs47cAOJOENHeUlkr9dTrrIAFXCjNcrj6EtMGz6o4JaC5Qv6h-Xa7pDy4DR2ioyjC-9Nv7vWCnkYr51qxp4XFtWJNHHOjfFEQb0GKmvfWS38DJq-bXRIYKoMz5t46SLeBe8AsAUpFCHV8mezPUHIooogDHaw3EQxEy4Zogmc39Tfx_D-A467hkJzyGWi1FVg8gLXeSQyQeJrCgla8OjoVcXkw_yD5xbuFzrqvXWFyW6LYUd-9Z6BeVlg3OdFH9VQEYc0uQcJ8UKJOc6tIZda6fSDWHwgfYpnLoKDnffvaNHKqMi9w-6da5O6IHTwSYUmimnPt7fRgXgSqZmvyVudEZDFunsCyrDKDHIBKWKRUmB_SdTzL_NKramDDti2q-wUjinAvIMlEaRXuuKzcYIOIkRnBbc7n8m1luBRIgjfEZ9XwPoyCoa1QcI5QKqnFtHi9Q2Sv2WzR6-pwU0TvCll1w9ujn7EJVJtULmrNfUAR2qPbMzw8lqBdNrg1KEEFhsbkANzswrL-ESNeovrZxJXpLCL2X1lvYshqkSDljfhIZcPZg72x23XbhGyp_vxBgIrBmHA_Phah7yWrhVlAp4b2FQNs_iKSfIDSzVAbOCWGuR5AZm8JDOCaudNBJ09pKIby-wLc4Kim-sQuefzMEiG6AUuxjQ1HkB81GYUpQiZVhydADJzgYgzDsp3jCIg31kp_AQStWT2RiYoC0cTcSDtEMUphj2LrR2gnf3rPblFzuEKpkt7P5bM8JkrVOpBmxYYXg"
+                },
+                {
+                    "original": "https://kubnews.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/69d/1200_800_2/1wnuqgp0v36wemxbdewnpntdifm9sbe0.webp",
+                    "thumbnail": "https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3Ck1WXdvCaHKXLkzhZtODL0zKt1Yp9IS7eP_bdDoQhc7ydh3nWYpxwDLjJ5v-vaBJfIQ2sDDs3x0e632aQ59ma1NbDACEkGwd8Ao9xgqot1VouskdcfiB5jDgnDEAf5eiskcXoCXhAZpKg2HdjMD5PRebKJQu5utSKclwg22rLGdYZFs47cAOJOENHeUlkr9dTrrIAFXCjNcrj6EtMGz6o4JaC5Qv6h-Xa7pDy4DR2ioyjC-9Nv7vWCnkYr51qxp4XFtWJNHHOjfFEQb0GKmvfWS38DJq-bXRIYKoMz5t46SLeBe8AsAUpFCHV8mezPUHIooogDHaw3EQxEy4Zogmc39Tfx_D-A467hkJzyGWi1FVg8gLXeSQyQeJrCgla8OjoVcXkw_yD5xbuFzrqvXWFyW6LYUd-9Z6BeVlg3OdFH9VQEYc0uQcJ8UKJOc6tIZda6fSDWHwgfYpnLoKDnffvaNHKqMi9w-6da5O6IHTwSYUmimnPt7fRgXgSqZmvyVudEZDFunsCyrDKDHIBKWKRUmB_SdTzL_NKramDDti2q-wUjinAvIMlEaRXuuKzcYIOIkRnBbc7n8m1luBRIgjfEZ9XwPoyCoa1QcI5QKqnFtHi9Q2Sv2WzR6-pwU0TvCll1w9ujn7EJVJtULmrNfUAR2qPbMzw8lqBdNrg1KEEFhsbkANzswrL-ESNeovrZxJXpLCL2X1lvYshqkSDljfhIZcPZg72x23XbhGyp_vxBgIrBmHA_Phah7yWrhVlAp4b2FQNs_iKSfIDSzVAbOCWGuR5AZm8JDOCaudNBJ09pKIby-wLc4Kim-sQuefzMEiG6AUuxjQ1HkB81GYUpQiZVhydADJzgYgzDsp3jCIg31kp_AQStWT2RiYoC0cTcSDtEMUphj2LrR2gnf3rPblFzuEKpkt7P5bM8JkrVOpBmxYYXg"
+                },
+                {
+                    "original": "https://avatars.mds.yandex.net/i?id=1b7efb54d9ac9d37efc78ac019cfeef9_l-5233303-images-thumbs&n=13",
+                    "thumbnail": "https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3XRtUCtuQbybLKEy0N9TWL07EsQYirtWxev7bc21Fg8elIk-1DNsjxTLjLJr3s6JCfIQ2sDDs3x0e632aQ59ma1NbDACEkGwd8Ao9xgqot1VouskdcfiB5jDgnDEAf5eiskcXoCXhAZpKg2HdjMD5PRebKJQu5utSKclwg22rLGdYZFs47cAOJOENHeUlkr9dTrrIAFXCjNcrj6EtMGz6o4JaC5Qv6h-Xa7pDy4DR2ioyjC-9Nv7vWCnkYr51qxp4XFtWJNHHOjfFEQb0GKmvfWS38DJq-bXRIYKoMz5t46SLeBe8AsAUpFCHV8mezPUHIooogDHaw3EQxEy4Zogmc39Tfx_D-A467hkJzyGWi1FVg8gLXeSQyQeJrCgla8OjoVcXkw_yD5xbuFzrqvXWFyW6LYUd-9Z6BeVlg3OdFH9VQEYc0uQcJ8UKJOc6tIZda6fSDWHwgfYpnLoKDnffvaNHKqMi9w-6da5O6IHTwSYUmimnPt7fRgXgSqZmvyVudEZDFunsCyrDKDHIBKWKRUmB_SdTzL_NKramDDti2q-wUjinAvIMlEaRXuuKzcYIOIkRnBbc7n8m1luBRIgjfEZ9XwPoyCoa1QcI5QKqnFtHi9Q2Sv2WzR6-pwU0TvCll1w9ujn7EJVJtULmrNfUAR2qPbMzw8lqBdNrg1KEEFhsbkANzswrL-ESNeovrZxJXpLCL2X1lvYshqkSDljfhIZcPZg72x23XbhGyp_vxBgIrBmHA_Phah7yWrhVlAp4b2FQNs_iKSfIDSzVAbOCWGuR5AZm8JDOCaudNBJ09pKIby-wLc4Kim-sQuefzMEiG6AUuxjQ1HkB81GYUpQiZVhydADJzgYgzDsp3jCIg31kp_AQStWT2RiYoC0cTcSDtEMUphj2LrR2gnf3rPblFzuEKpkt7P5bM8JkrVOpBmxYYXg"
+                },
+                {
+                    "original": "https://avatars.mds.yandex.net/i?id=08e22484f7c164653aeb78fe269913a9_l-5261734-images-thumbs&n=13",
+                    "thumbnail": "https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3DE5VXYHDOyeaKE2wYIGHfReX4VJ0od3gKarYdGpC0camJkTgCtp3ljLiI5r6tKJFfIQ2sDDs3x0e632aQ59mZAMaBDHm4B4A8AQuzRKuq2VOneMBaLiX9heRzhEqctyGjEw6uTvtMoBck3ziifPiNSiCHLMUw9REJsRkmkejLFxqSmYI9-c-I98-JsU0rqp4aqfuMHPXquongqMQGm_AsoZHJLQa1BCWUIJf9azk5Rwwmhi5FO7GeT7EUoVDnCFAVk1SG9P7JTLiBTblHqOSSlWc1zZ52qP0KYO6FxNN3JqrbS-HIekElE6fcNi84uIhN740kC3O6H8t526OYJQIe0RyZhb48yoJ2zoSyS-XqnNigfIuX9Gn7zKFmhA5Yty1pl80vyrWD7Z6plPIu9LnJBufIZs478FEOPJcgkqHMXhVbnQL0-AHIcAYH8URs7B1XpXjEXHEsc0ZmYYOO3LhhYtaNJkEwB21UYBE-Yry4wY4uiinOOruYS3QbZNrgTRybmZjBtXCEg7-CRPdM5WfX2yp3Spy7q3LLIyDHChn84GrXze3N_8NtlqeQ9em4ds9ELgZnhvc_0YP52uBWbooZ29CQjbD7Ssj-AYFwz2ftk51mPQqRuaswiOgqRYPafackFYrtjjbEbt8hFHeg8L3EjWnPos42c9EGetYpXOpN2lJRkMD9_gWLNUBBdEkhqBXWpD0EXTeotUZtoY3Hmn2vpJ2JpQs1hWXT7xBx5bE0yYFlxaLI_j-fx77QoVwpidSSGhBC97nDxP7HxvAEYWGflmV8ilR85bzBZqvIRBa5JaEYzGpHsIRuk-fRP2FyN4aHrQjmDz59V8Z-2qYR7UDZE5Ebgza0QoYyiQa5R6zkmh1sPE-QMCr6gujnTAsdt-AsVsVlwfsJKp8pWDIpezgOCuICboOyMBqGMZOkUemD1hvbW8"
+                }
+            ]
+        },
+        {
+            "category": 4,
+            "name": "Животные",
+            "photos": [
+                {
+                    "original":"https://i.pinimg.com/originals/20/b2/1a/20b21a256254243d8975133e68853b1d.jpg",
+                    "thumbnail": "https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3D0hUXIyXZnOcKBq0NNLcJBuXs1ImpNO3fK_aJT5Egcb2Jh6yCN0kwzLiJp72vaNCfIQ2sDDs3x0e632aQ59ma1NbDACEkGwd8Ao9xgqot1VouskdcfiB5jDgnDEAf5eiskcXoCXhAZpKg2HdjMD5PRebKJQu5utSKclwg22rLGdYZFs47cAOJOENHeUlkr9dTrrIAFXCjNcrj6EtMGz6o4JaC5Qv6h-Xa7pDy4DR2ioyjC-9Nv7vWCnkYr51qxp4XFtWJNHHOjfFEQb0GKmvfWS38DJq-bXRIYKoMz5t46SLeBe8AsAUpFCHV8mezPUHIooogDHaw3EQxEy4Zogmc39Tfx_D-A467hkJzyGWi1FVg8gLXeSQyQeJrCgla8OjoVcXkw_yD5xbuFzrqvXWFyW6LYUd-9Z6BeVlg3OdFH9VQEYc0uQcJ8UKJOc6tIZda6fSDWHwgfYpnLoKDnffvaNHKqMi9w-6da5O6IHTwSYUmimnPt7fRgXgSqZmvyVudEZDFunsCyrDKDHIBKWKRUmB_SdTzL_NKramDDti2q-wUjinAvIMlEaRXuuKzcYIOIkRnBbc7n8m1luBRIgjfEZ9XwPoyCoa1QcI5QKqnFtHi9Q2Sv2WzR6-pwU0TvCll1w9ujn7EJVJtULmrNfUAR2qPbMzw8lqBdNrg1KEEFhsbkANzswrL-ESNeovrZxJXpLCL2X1lvYshqkSDljfhIZcPZg72x23XbhGyp_vxBgIrBmHA_Phah7yWrhVlAp4b2FQNs_iKSfIDSzVAbOCWGuR5AZm8JDOCaudNBJ09pKIby-wLc4Kim-sQuefzMEiG6AUuxjQ1HkB81GYUpQiZVhydADJzgYgzDsp3jCIg31kp_AQStWT2RiYoC0cTcSDtEMUphj2LrR2gnf3rPblFzuEKpkt7P5bM8JkrVOpBmxYYXg"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=8d677263cb35771f98d5c98f738c7663_l-5219173-images-thumbs&n=13",
+                    "thumbnail": "https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3Wx8HCIHAa3rLfUqybNPRfRuW4lwgo9y3LPyLdG4Y1MX0IU2wC9x3kDLvIpr7saRDfIQ2sDDs3x0e632aQ59ma1NbDACEkGwd8Ao9xgqot1VouskdcfiB5jDgnDEAf5eiskcXoCXhAZpKg2HdjMD5PRebKJQu5utSKclwg22rLGdYZFs47cAOJOENHeUlkr9dTrrIAFXCjNcrj6EtMGz6o4JaC5Qv6h-Xa7pDy4DR2ioyjC-9Nv7vWCnkYr51qxp4XFtWJNHHOjfFEQb0GKmvfWS38DJq-bXRIYKoMz5t46SLeBe8AsAUpFCHV8mezPUHIooogDHaw3EQxEy4Zogmc39Tfx_D-A467hkJzyGWi1FVg8gLXeSQyQeJrCgla8OjoVcXkw_yD5xbuFzrqvXWFyW6LYUd-9Z6BeVlg3OdFH9VQEYc0uQcJ8UKJOc6tIZda6fSDWHwgfYpnLoKDnffvaNHKqMi9w-6da5O6IHTwSYUmimnPt7fRgXgSqZmvyVudEZDFunsCyrDKDHIBKWKRUmB_SdTzL_NKramDDti2q-wUjinAvIMlEaRXuuKzcYIOIkRnBbc7n8m1luBRIgjfEZ9XwPoyCoa1QcI5QKqnFtHi9Q2Sv2WzR6-pwU0TvCll1w9ujn7EJVJtULmrNfUAR2qPbMzw8lqBdNrg1KEEFhsbkANzswrL-ESNeovrZxJXpLCL2X1lvYshqkSDljfhIZcPZg72x23XbhGyp_vxBgIrBmHA_Phah7yWrhVlAp4b2FQNs_iKSfIDSzVAbOCWGuR5AZm8JDOCaudNBJ09pKIby-wLc4Kim-sQuefzMEiG6AUuxjQ1HkB81GYUpQiZVhydADJzgYgzDsp3jCIg31kp_AQStWT2RiYoC0cTcSDtEMUphj2LrR2gnf3rPblFzuEKpkt7P5bM8JkrVOpBmxYYXg"
+                },
+                {
+                    "original":"https://cdn.culture.ru/images/4cab0f5d-3389-5d2f-9d7e-d5c4747bf87e",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=11a66a46dec349e31a7a8e4a7f859fa9af3c5559-5677037-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://fotoohota.spb.ru/site/wp-content/uploads/2013/02/Krasavitsa.jpg",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=ae97b2b58fbaeca16707fa1a21f9f1286389b1a7-16872648-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://i.pinimg.com/originals/b8/c5/e1/b8c5e1705a5630d4d82bc4d7a0b8aab3.jpg",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=ed9516f6ce13457c52c6deaa537b8170b95fc337-4298456-images-thumbs&n=13"
+                }
+            ]
+        },
+        {
+            "category": 4,
+            "name": "Насекомые",
+            "photos": [
+                {
+                    "original":"https://i.pinimg.com/originals/3b/7e/4a/3b7e4aae3b6e30591fd26098ddd9983c.jpg",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=46308cec4e8806ba46b565eb5c2615084fafcb22-4055838-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://c0.wallpaperflare.com/preview/584/185/173/d8p176i3odb8utkjecsqefpnkq.jpg",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=fb7620ea3a1bc437157ee32ac1d495093e45838c-8201030-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3Wh4AWNiTb3OaLku2bd-BeBbKtF0k9dG3cf3ed2hBgcSYeVHlW4F-wi7uOcai5PYVIsAvuSLkzkNM4mWHGoJ9Ow10aC_44wAN_QI7zRuehHJLlv9KYuO63GibmxY0UfyugX0phBvKBLd3m1LZvMDoHxaPGJsv_eB3Bu5uuE26FGtvTXko2MAvN_UKHc0ag6BIRqfkJV__is8FmqsLKGX2pZ9wCL053AimVIx3zrvp8AcShRi2PcD4dzDxaodApihsW15dNMPREgzlKjfAIrGfc3-h7ihW4YTOHJ2iKTRN24-UQzOALd4Wu3uhZ8i81PcjPqwhlhPG61QM-kmPaZ06U29TdjzM6iszwQYG9BqIqG5aucgjUvqfyDyaiAY0Yta9j3s4vyb8IoJYsWD4udHbAiunNLc6_f5BPvZjnFCeK099Tl0v4cIwEcwKONAAjpR6S4bmNkTYtNQghIoWCVL7uI9dFqk0_wmkT4BR2L3z-CcimzSyFdjrYw_nQppVlBBHakNbDfTtDgDAEhr2L6SmRnW95RxY3oHBJZaZAxtW272McyWWJPwCukiufcuFyNAlE6IXhAT_yVQJ9XChSYERY0tzTSLNwAgP1gwU_Aa1v3dcvdEUWdeO7Q-cvg0eS-C0kHIqsjjxJKBap1joqef1OjS3NIE0_d9YOtFaslaPN2dKRnk38M8lCNYeDeUQrJB_XIbjLFfAtPsgva8NHmnilJ1QPr883ReYSr5N7o3TxQocty-gBcbYSCDxWb1GtDZJSE5QKOnwCxbIDzjmNoWTelq-xgFj5qjXCauhPgxB9IGKbQyrOPAXu0-EXuKA794pKaQwoQ7m30gI7G6uYoIwZWdJVB7s-zotySo30CKTv19ZqdcyXv-m7ju6nRI3V8G5rlMVhQ3gJIFrsX7Gvs3rFQOGApA70951LOVuvW6-EUxmfnY",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=227dd8bc5fd8e59abb4bf942064ea9b91ec6d175-4824764-images-thumbs&n=13"
+                },
+                {
+                    "original": "https://allwebs.ru/images/2025/07/24/26e3426c4275f5e56c715942419264b3.webp",
+                    "thumbnail": "https://yandex-images.clstorage.net/URk96u390/b74258U_4P/ziaGfqRngaLh4l4ojDW1MvGCXg_3J54ehSQ3DhtRCtqUbyeeckviZNKELU3BtgUpoYbgLfeNJm1FgcT1cR7lD90hxDLnJJv-saBGY8AyvDbuyUNH92CCTI4zLF9GR1XXnG5x8BQ9xRe4qk5mtM4qafeL5y22wDYqf-jXkmAuuh_zHrR3g0HavcbUGByrLaIS8MN3CMBCj1WgB2ZTTXgC7_U-E8kFOuU0l5BGbpLOK3TTseocra8LNk_7upNQM6Yr-RWqeqJ4-KvKxTsLjjqlO-jbcwLAb51ouAdQTElHD_PJOSfaISb-JaqrVk64wxNG7IrTGqeiAihB-qOUWRG6A9Q_oUmZReyp1NgUJp48ogbv_18r-U-zbqskbEdqTybI2wYT1wou8R6TlHJiifcrf9uX9gKBqQYzWvyDk3M-uizZDbpxknrni-DhNzaZDKcDw95KIOxumlW-MV5LQFwfy8oaAcohPdw2iLZ_brfTMXnng-c9r7wQEXHgn41xLocc9Ai6V7xs9YjLxyAHqCyjIeD7Qxzsa7VwqxNvWmFaGsHxEhbHJx_JGbanc3aV9R5T1b_ZBqyWDBdE9ZqfYjuVGNQNuXmPU-WLwNknKYQ_mxrI-XIlz12kV4kkaUhTYQbU8DY39zEw8DSwqGVom_83QsyO8AaYng0eS9mwlUU1kAXvBKV4gHf5hubDNSChHLc17eZVMOxYlFWfKFpseXIZ2tYyNsIFJc07na9leoLmIVvjhvA9qqYDCXHPn7RUNZAn7SSoWpR6_arV-yU5tBqTAd3WfTD3eaVumDhATHp9CeHXHDTKLDrUBLOxe2u35Qdy4IP2BY-LNy9t47aiWgaCD_sxv2embvmH1dggA6cWnj3G9Ugj6HiuTp84aFFNbi3X0TAbzSgM0Q-CinpOuNMTZMym9RKeuAo2Y9qEs2YquRnOCZtZv0DMl-biBDaHMqAf88liAdpJm3ueBUxYTX0"
+                },
+                {
+                    "original":"https://avatars.mds.yandex.net/i?id=8a21401129c3982da5491af3ea94383b_l-9244694-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=2f6a65d7c09860f4fe3ba884b6bf6fd79fabb16d-16244168-images-thumbs&n=13"
+                }
+            ]
+        },
+        {
+            "category": 3,
+            "name": "Коралловые рифы",
+            "photos": [
+                {
+                    "original":"https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_68770480a92b381ca31c7937_687704819c519a7284a29391/scale_1200",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=0acfbd143436f31483dd34e53bc2111ec915040c-16514385-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://i.pinimg.com/originals/77/97/86/77978698b253c798770e3426cb6c29a4.jpg",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=d1110346fd61fe93c32d81b1ed0abb0fb6740461-10681994-images-thumbs&n=13"
+                },
+                {
+                    "original":"https://images.newscientist.com/wp-content/uploads/2025/10/10144231/SEI_269728983.jpg?width=1200",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=2a00000199daaf56c1dc6e5abca4d55e7fef-1543035-fast-images&n=13"
+                },
+                {
+                    "original":"https://resizer.mail.ru/p/30701be5-a5ed-50bd-ad9e-be84b5c6f255/AQAKx5mLdDYe8xVcDLSUsJ-5mfrMpbdgH1B4_7iXxCSpJoUhCiImRymTDzRqfiXQCJnmgV07fD7DDzOfVshePeVLn2c.jpg",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=2a00000199e2915c4130857436fca7e2b509-1366791-fast-images&n=13"
+                },
+                {
+                    "original": "https://avatars.mds.yandex.net/i?id=160ab60b066b2f48d06d106c85e949ff_l-4355742-images-thumbs&n=13",
+                    "thumbnail": "https://avatars.mds.yandex.net/i?id=75150db1f2ec9208315c1ace518f4328c378a2ba-12642203-images-thumbs&n=13"
+                }
+            ]
+        }       
+    ]
+}
