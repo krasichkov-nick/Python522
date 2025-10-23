@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ desk_title }}</title>
+</head>
+<body>
+    <h2>Описание программы</h2>
+    <p>Эта программа написана начинающим специалистом - Мной :)</p>
+    <ol>Программа генерирует пароли
+        <li>Выбираем длину пароля</li>
+        <li>{{ desk_add_text }} букв в верхнем регистре</li>
+        <li>{{ desk_add_text }} цифр</li>
+        <li>{{ desk_add_text }} спецсимволов</li>
+    </ol>
+    <p><a href="{% url 'home' %}">Вернуться на главную</a></p>
+</body>
+</html>
