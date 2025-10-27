@@ -1,0 +1,10 @@
+from django.db import models
+
+
+class Skills(models.Model):
+    name = models.CharField(max_length=100)
+    type = models.CharField(max_length=100)
+    description = models.CharField(max_length=350)
+    image = models.ImageField(upload_to='skills/images/')
+    url = models.URLField(blank=True)
+
