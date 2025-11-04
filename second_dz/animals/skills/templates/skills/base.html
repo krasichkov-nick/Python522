@@ -14,9 +14,20 @@
             <a href="{% url 'index' %}"><img src="{% static 'skills/logo.png' %}" alt=""></a>
         </div>
         <ul>
+            {% if user.is_authenticated %}
             <li><a href="{% url 'index' %}">Главная</a></li>
             <li><a href="{% url 'blogs' %}">Статьи</a></li>
             <li><a href="{% static 'skills/help.pdf' %}" target="_blank">Помогите планете</a></li>
+            <li>
+                <form action="{% url 'logoutuser' %}" method="post">
+                    {% csrf_token %}
+                    <button class="btn2">Выйти</button>
+                </form>
+            </li>
+            {% else %}
+            <li><a href="{% url 'signupuser' %}">Зарегистрироваться</a></li>
+            <li><a href="{% url 'loginuser' %}">Войти</a></li>
+            {% endif %}
         </ul>
     </div>
 </div>

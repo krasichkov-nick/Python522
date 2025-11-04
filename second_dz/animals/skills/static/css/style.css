@@ -113,3 +113,32 @@ body{
 .menu li {
     margin-left: 40px;
 }
+
+.btn1 {
+    background: transparent;
+    
+    color: #663366;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.login {
+    text-align: center;
+    padding: 40px;
+    
+}
+
+.login div {
+    margin-bottom: 20px;
+}
+
+.btn2 {
+    background: transparent;
+    
+    color: #663366;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    border: 0;
+}

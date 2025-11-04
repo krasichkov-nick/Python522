@@ -1,0 +1,11 @@
+{% extends 'skills/base.html' %}
+{% load static %}
+{% block content %}
+<h2>{{ error }}</h2>
+<form method="post" class="login">
+    {% csrf_token %}
+    {{ form }}
+    <button class="btn1">Авторизация</button>
+</form>
+
+{% endblock %}
